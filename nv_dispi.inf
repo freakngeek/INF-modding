@@ -924,7 +924,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1BB7% = win10adesktop,      PCI\VEN_10DE&DEV_1BB7
 %NVIDIA_DEV.1BB8% = win10adesktop,      PCI\VEN_10DE&DEV_1BB8
 %NVIDIA_DEV.1BBA% = win10adesktop,      PCI\VEN_10DE&DEV_1BBA
-%NVIDIA_DEV.1BBB% = win10adesktop,      PCI\VEN_10DE&DEV_1BBB
+%NVIDIA_DEV.1BBB% = win10amobile,       PCI\VEN_10DE&DEV_1BBB
 %NVIDIA_DEV.1BBD% = win10adesktop,      PCI\VEN_10DE&DEV_1BBD
 %NVIDIA_DEV.1BBF% = win10adesktop,      PCI\VEN_10DE&DEV_1BBF
 %NVIDIA_DEV.1BC0% = win10adesktop,      PCI\VEN_10DE&DEV_1BC0
@@ -1664,7 +1664,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1BB7% = win10desktop,      PCI\VEN_10DE&DEV_1BB7
 %NVIDIA_DEV.1BB8% = win10desktop,      PCI\VEN_10DE&DEV_1BB8
 %NVIDIA_DEV.1BBA% = win10desktop,      PCI\VEN_10DE&DEV_1BBA
-%NVIDIA_DEV.1BBB% = win10desktop,      PCI\VEN_10DE&DEV_1BBB
+%NVIDIA_DEV.1BBB% = win10mobile,       PCI\VEN_10DE&DEV_1BBB
 %NVIDIA_DEV.1BBD% = win10desktop,      PCI\VEN_10DE&DEV_1BBD
 %NVIDIA_DEV.1BBF% = win10desktop,      PCI\VEN_10DE&DEV_1BBF
 %NVIDIA_DEV.1BC0% = win10desktop,      PCI\VEN_10DE&DEV_1BC0
