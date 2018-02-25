@@ -2271,9 +2271,7 @@ HKCU,"Software\NVIDIA Corporation\Global\NvCplApi"
 HKCU,"Software\NVIDIA Corporation\Global\OpenGL"
 HKCU,"Software\NVIDIA Corporation\Global\Stereo3D"
 HKCU,"Software\NVIDIA Corporation\Global\UserLoggedIn"
-HKCU,"Software\NVIDIA Corporation\NVIDIA Control Panel"
 HKCU,"Software\NVIDIA Corporation\NVPMAPI.001.006"
-HKCU,"Software\NVIDIA Corporation\NvControlPanel2"
 HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",D3PCLatency
 HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableAggressivePStateOnly
 HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableForceIgpuDgpuFromUI
@@ -2286,8 +2284,6 @@ HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",SurpriseRemovalSupport
 HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm\DisplayDatabase",1641970VRcontext
 HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm\DisplayDatabase",1641970context
 HKLM,"Software\Khronos\OpenCL\Vendors","nvopencl.dll"
-HKLM,"Software\Microsoft\TMM",TMMRestrictionOverride
-HKLM,"Software\Microsoft\TMM",UseIViewHelper
 HKLM,"Software\Microsoft\Windows Media Foundation",EMUOPM
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\RIVATNT"
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\msogl",dll
@@ -2299,8 +2295,6 @@ HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NVDeployClient
 HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NVHotkey
 HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NVRotateSysTray
 HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NvCplCleanup
-HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NvCplDaemon
-HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NvMediaCenter
 HKLM,"Software\Microsoft\Windows\CurrentVersion\Run",NvSvc
 HKLM,"Software\Microsoft\Windows\CurrentVersion\RunOnce",NvExportOEMDefaults
 HKLM,"Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved",{6D0E6651-1CD8-11d6-92C4-0003479E4848}
@@ -2309,12 +2303,6 @@ HKLM,"Software\Microsoft\Windows\CurrentVersion\Uninstall\NVIDIA"
 HKLM,"Software\NVIDIA Corporation\Global\CoprocManager"
 HKLM,"Software\NVIDIA Corporation\Global\Display"
 HKLM,"Software\NVIDIA Corporation\Global\FTS"
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",AddDeviceSequence
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",AllowAdditionalDisplays
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",Branding
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",DisablePowerPolicy
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",DisableSmartHybrid
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",HybridPlatformRole
 HKLM,"Software\NVIDIA Corporation\Global\NVHotkey"
 HKLM,"Software\NVIDIA Corporation\Global\NVTweak"
 HKLM,"Software\NVIDIA Corporation\Global\NvCplApi"
@@ -2328,9 +2316,6 @@ HKLM,"Software\NVIDIA Corporation\Installer",3DVisionInstall
 HKLM,"Software\NVIDIA Corporation\LDDM\UMode\Video"
 HKLM,"Software\NVIDIA Corporation\NVAPI"
 HKLM,"Software\NVIDIA Corporation\NVIDIA PerfKit"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\Client",ContactDisabled
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\Client",EditingDisabled
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\Client",PrintingDisabled
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\DisplayPanelServer",DesktopProfileFeaturesDisabled
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{01504157-8839-4BF6-9B5B-51165A967B2B}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{0EEC1AF6-7664-4D17-88A5-B71EF18A93BC}"
@@ -2339,18 +2324,11 @@ HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{3E500C0C-5D15-4610-8095-7CEBD4C43F24}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{49F585C0-CE12-4306-9100-B6A28857B10B}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{51840041-B26F-4843-B358-22ABB067396C}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{63005CD0-8541-439c-A66A-617F4B1F2BCB}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{684FA5EB-5222-47eb-8448-C14391005105}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{6E4B938E-4BA1-4E8D-BCBA-8C51CE95F94F}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{9B6E9D01-A89A-45AA-892F-30969B4A5C4D}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{C407106B-97E1-44DF-B594-5E557737854F}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{D68CED81-05AF-4071-98C4-3829E31945CF}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{DE0549BD-F34D-4748-AD94-0F2F22749F4F}"
-HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{EDAC9CAA-4874-48C0-80DB-2D81B63EFE13}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Overrides","{EF884939-F1EA-4EFB-B676-D2F802177C5F}"
 HKLM,"Software\NVIDIA Corporation\NvControlPanel2\RegisteredServers\Video_TVServer",AdjustVideoColorSettings
 HKLM,"Software\NVIDIA Corporation\RIVA TNT\OpenGL"
@@ -2365,11 +2343,12 @@ HKLM,"System\CurrentControlSet\Services\nv\Performance",Collect
 HKLM,"System\CurrentControlSet\Services\nv\Performance",Library
 HKLM,"System\CurrentControlSet\Services\nv\Performance",Open
 HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableCoproc
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableHybridMode
 HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableHybridPerfSLI
 HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableRuntimePowerManagement
 HKLM,"System\CurrentControlSet\Services\nvlddmkm",PreferCoprocOverHybrid
 HKLM,"System\CurrentControlSet\Services\nvlddmkm",WDMDriver
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\NvControlPanel2\RegisteredServers\Overrides","{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\NvControlPanel2\RegisteredServers\Overrides","{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
 HKR,,"CX875.HD480i.default.overscan"
 HKR,,"CX875.HD576i.default.overscan"
 HKR,,"D3D_39482904"
