@@ -2884,13 +2884,15 @@ HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",InputType
 HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",MFTFlags,%REG_DWORD%,0x00000004
 HKCR,"MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,55,59,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
-HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,06,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,c8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,f8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,28,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,93,90,4b,f3,e0,05,16,4b,99,3d,3e,2a,2c,de,6a,d3,15,00,00,00,00,00,00,00,54,14,0d,00,12,00,09,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,d8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,08,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
 HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,50,30,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",MFTFlags,%REG_DWORD%,0x00000004
-HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+HKCR,"MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,35,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"MediaFoundation\Transforms\Categories\D6C02D4B-6833-45B4-971A-05A4B04BAB91\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,""
 HKCR,"MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,""
 HKCR,"MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,""
+HKCR,"SOFTWARE\NVIDIA Corporation\Global\OEM",NVFordPath,%REG_SZ%,"%%ProgramFiles%%\Dassault Systemes"
 HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}",,%REG_SZ%,"NVIDIA H.264 Encoder MFT"
 HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",,%REG_EXPAND_SZ%,"%%SystemRoot%%\SysWow64\nvEncMFTH264.dll"
 HKCR,"Wow6432Node\CLSID\{60F44560-5A20-4857-BFEF-D29773CB8040}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
@@ -2911,83 +2913,122 @@ HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB
 HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",MFTFlags,%REG_DWORD%,0x00000004
 HKCR,"Wow6432Node\MediaFoundation\Transforms\70F36578-2741-454F-B494-E8563DDD1CB4",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,59,55,59,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,"NVIDIA HEVC Encoder MFT"
-HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,06,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,c8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,f8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,28,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,93,90,4b,f3,e0,05,16,4b,99,3d,3e,2a,2c,de,6a,d3,15,00,00,00,00,00,00,00,54,14,0d,00,12,00,09,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",Attributes,%REG_BINARY%,41,46,4d,49,05,00,00,00,ac,66,b8,2f,78,b0,42,49,ab,6c,00,3d,05,cd,a6,74,1f,00,00,00,00,00,00,00,30,00,00,00,a8,00,00,00,ae,fb,4f,31,41,5b,95,4c,9c,19,4e,7d,58,6f,ac,e3,1f,00,00,00,00,00,00,00,30,00,00,00,d8,00,00,00,cc,b0,ec,3a,5b,03,cc,4b,81,85,2b,8d,55,1e,f3,af,1f,00,00,00,00,00,00,00,12,00,00,00,08,01,00,00,15,cb,a7,88,07,7b,34,4a,91,28,e6,4c,67,03,c4,d3,13,00,00,00,00,00,00,00,08,00,00,00,00,00,00,00,9a,69,1a,f8,9a,64,7d,49,8c,73,29,f8,fe,d6,ad,7a,13,00,00,00,00,00,00,00,01,00,00,00,00,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,4e,00,56,00,49,00,44,00,49,00,41,00,20,00,48,00,45,00,56,00,43,00,20,00,45,00,6e,00,63,00,6f,00,64,00,65,00,72,00,20,00,4d,00,46,00,54,00,00,00,56,00,45,00,4e,00,5f,00,31,00,30,00,44,00,45,00,00,00
 HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",InputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,34,32,30,4f,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,4e,56,31,32,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,50,30,31,30,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",MFTFlags,%REG_DWORD%,0x00000004
-HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
+HKCR,"Wow6432Node\MediaFoundation\Transforms\966F107C-8EA2-425D-B822-E4A71BEF01D7",OutputTypes,%REG_BINARY%,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,45,56,43,00,00,10,00,80,00,00,aa,00,38,9b,71,76,69,64,73,00,00,10,00,80,00,00,aa,00,38,9b,71,48,32,36,35,00,00,10,00,80,00,00,aa,00,38,9b,71
 HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\D6C02D4B-6833-45B4-971A-05A4B04BAB91\70F36578-2741-454F-B494-E8563DDD1CB4",,%REG_SZ%,""
 HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\60F44560-5A20-4857-BFEF-D29773CB8040",,%REG_SZ%,""
 HKCR,"Wow6432Node\MediaFoundation\Transforms\Categories\F79EAC7D-E545-4387-BDEE-D647D7BDE42A\966F107C-8EA2-425D-B822-E4A71BEF01D7",,%REG_SZ%,""
-HKLM,"SOFTWARE\NVIDIA Corporation\Global\OEM",NVFordPath,%REG_SZ%,"C:\Program Files\Dassault Systemes"
+HKLM,"SOFTWARE\NVIDIA Corporation\Global\NVTweak",DisableCplHdAudioWar,%REG_DWORD%,0x0
+HKLM,"SYSTEM\ControlSet001\services\nvlddmkm",WDDMv22EnableSmoothTransition,%REG_DWORD%,0
 HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",DxgMms2OfferReclaim,%REG_DWORD%,2
 HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers\Power",UseSelfRefreshVRAMInS3,%REG_DWORD%,0
 HKLM,"Software\Khronos\OpenCL\Vendors",%10%\System32\nvopencl.dll,%REG_DWORD%,0x00000000
-HKLM,"Software\Microsoft\TMM",TMMRestrictionOverride,%REG_DWORD%,1
-HKLM,"Software\Microsoft\TMM",UseIViewHelper,%REG_DWORD%,1
 HKLM,"Software\Microsoft\Windows Media Foundation\HardwareMFT",EnableDecoders,%REG_DWORD%,0x00000001
 HKLM,"Software\Microsoft\Windows Media Foundation\HardwareMFT",EnableEncoders,%REG_DWORD%,0x00000001
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",AddDeviceSequence,%REG_DWORD%,1
+HKLM,"Software\NVIDIA Corporation\Global\DRS",DRS_DefaultProfile,%REG_SZ%,"Base Profile"
 HKLM,"Software\NVIDIA Corporation\Global\MCU",InstallPath,%REG_EXPAND_SZ%,"%%ProgramFiles%%\NVIDIA Corporation\NVSMI\MCU.exe"
-HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NoPages,%REG_DWORD%,0x0
-HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplAllowStartupDelay,%REG_DWORD%,0x3E8
-HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplDisableSmartDimmerPage,%REG_DWORD%,1
-HKLM,"Software\NVIDIA Corporation\Global\NVTweak",SRS1673,%REG_DWORD%,1
-HKLM,"Software\NVIDIA Corporation\Global\NVTweak",SRS1700,%REG_DWORD%,1
 HKLM,"Software\Wow6432Node\Khronos\OpenCL\Vendors",%10%\SysWow64\nvopencl.dll,%REG_DWORD%,0x00000000
 HKLM,"Software\Wow6432Node\Microsoft\Windows Media Foundation\HardwareMFT",EnableDecoders,%REG_DWORD%,0x00000001
 HKLM,"Software\Wow6432Node\Microsoft\Windows Media Foundation\HardwareMFT",EnableEncoders,%REG_DWORD%,0x00000001
-HKLM,"System\CurrentControlSet\services\nvlddmkm",EnableRuntimePowerManagement,%REG_DWORD%,5
+HKLM,"Software\Wow6432Node\NVIDIA Corporation\Global\NVTweak",IsFRLDriverSupported,%REG_DWORD%,1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm",PreferCoprocOverHybrid,%REG_DWORD%,1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\CoprocManager",ShowContextMenu,%REG_DWORD%,1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\Hybrid",WhiteList,%REG_MULTI_SZ%,"AlienwareAlienFXController.exe, AlienFusionController.exe"
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",HideManufacturerFromMonitorName,%REG_DWORD%,0
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",HideXGpuTrayIcon,%REG_DWORD%,0
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",NoPages,%REG_DWORD%,0x0
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",NvCplWinSatDWMAssessment,%REG_DWORD%,0x1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",SRS1673,%REG_DWORD%,1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\Global\NVTweak",SRS1700,%REG_DWORD%,1
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\NVTray",StartOnLogin,%REG_DWORD%,0
+HKLM,"System\CurrentControlSet\Services\nvlddmkm\NvTray",ShowInSedona,%REG_DWORD%,0
+HKR,,AllowSLIReleasePostDisplayOwnership,%REG_DWORD%,1
 HKR,,ContentProtectionDriverName,%REG_SZ%,"nvmcumd.dll"
-HKR,,DefaultSettings.BitsPerPel,%REG_DWORD%,16
-HKR,,DefaultSettings.XResolution,%REG_DWORD%,800
-HKR,,DefaultSettings.YResolution,%REG_DWORD%,600
-HKR,,DesktopStereoShortcuts,%REG_DWORD%,0
-HKR,,DevSwitchSuppressMask,%REG_DWORD%,5
-HKR,,DisableStereoLinks,%REG_DWORD%,1
-HKR,,DitherAlgo6,%REG_DWORD%,0x3
+HKR,,DD1674070,%REG_DWORD%,1
+HKR,,DDIBacklightControl,%REG_DWORD%,0x01
+HKR,,DP2VGAFakeEdid,%REG_DWORD%,0
+HKR,,DP_KEEP_OPT_LINK_ALIVE,%REG_DWORD%,1
+HKR,,DP_SKIP_LT_FOR_UNIGRAF,%REG_DWORD%,1
+HKR,,DelayHeadVisibility,%REG_DWORD%,1
+HKR,,DisableStereoLinks,%REG_DWORD%,0
+HKR,,DitherAlgo6,%REG_DWORD%,3
+HKR,,DitherToBpcAlgo,%REG_DWORD%,0x03
+HKR,,DitherToBpcAlgo,%REG_DWORD%,0x1
 HKR,,DriverSupportModules,%REG_MULTI_SZ%,"nvapi64.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcompiler.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuda.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvFBC64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvIFR64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvIFROpenGL.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvDecMFTMjpeg.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncMFTH264.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncMFThevc.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvEncodeAPI64.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcompiler.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvcuvid.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvfatbinaryLoader.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvFBC64.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvIFR64.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"NvIFROpenGL.dll"
-HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvmcumd.dll"
 HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvopencl.dll"
+HKR,,DriverSupportModules,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
 HKR,,DriverSupportModulesWow,%REG_MULTI_SZ%,"nvapi.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcompiler.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuda.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuvid.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvFBC.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvIFR.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvIFROpenGL.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvDecMFTMjpeg.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncMFTH264.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncMFThevc.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvEncodeAPI.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcompiler.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuda.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvcuvid.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvfatbinaryLoader.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvFBC.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvIFR.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"NvIFROpenGL.dll"
-HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
 HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvopencl.dll"
+HKR,,DriverSupportModulesWow,%REG_SZ_APPEND%,"nvptxJitCompiler.dll"
+HKR,,EnableBrightnessControl,%REG_DWORD%,1
 HKR,,EnableCoprocPowerControl,%REG_DWORD%,0x40
-HKR,,EnableDpLibrary,%REG_DWORD%,1
-HKR,,FeatureControl,%REG_DWORD%,0x214
+HKR,,EnablePollPassiveDongle,%REG_DWORD%,1
+HKR,,EnableRuntimePowerManagement,%REG_DWORD%,5
+HKR,,EnableXGPUSupport,%REG_DWORD%,1
+HKR,,HDAudioCoprocDynamic,%REG_DWORD%,2
+HKR,,HDMI_3DCtrl,%REG_DWORD%,0x1
 HKR,,KMD25078517310,%REG_DWORD%,1
+HKR,,ModesetBlankDelay,%REG_DWORD%,1
 HKR,,MonitorCapabilityList,%REG_MULTI_SZ%,"ACR,2A1,71;"
 HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"7204,2F1,71,0,0,0,0;"
 HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"ACR,0126,70;"
+HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"SHP,1430,5,0,14,4,0;"
+HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"SHP,1446,196,1028,0777,3;"
+HKR,,MonitorCapabilityList,%REG_SZ_APPEND%,"SHP,1446,196,1028,0778,3;"
+HKR,,OverlayMode3,%REG_DWORD%,0
+HKR,,Override1400x1050,%REG_DWORD%,2
+HKR,,RM200297641,%REG_DWORD%,0x1
+HKR,,RM776993,%REG_DWORD%,0x402
+HKR,,RM926053,%REG_DWORD%,1
+HKR,,RMEdpPowerOnToMLTimeMs,%REG_DWORD%,0x00000258
+HKR,,RMGpuSurpriseRemoval,%REG_DWORD%,1
+HKR,,RMWarBug988798,%REG_DWORD%,1
+HKR,,Rm1536122,%REG_DWORD%,1
+HKR,,Rm628700,%REG_DWORD%,1
+HKR,,RmBug1291623WAR,%REG_DWORD%,1
+HKR,,RmCeElcgWar1895530,%REG_DWORD%,0x1
 HKR,,RmDynamicSLIAllowed,%REG_DWORD%,1
 HKR,,RmFbsrPagedDMA,%REG_DWORD%,0x1
 HKR,,RmMaintainDevs,%REG_DWORD%,1
 HKR,,RmMaintainTVStandard,%REG_DWORD%,1
-HKR,,RotateFlag,%REG_DWORD%,0x40
+HKR,,RmPmuperfmonSampling,%REG_DWORD%,0
+HKR,,RmUnrollBurstForFbstop,%REG_DWORD%,1
+HKR,,RmUseSWI2C,%REG_DWORD%,1
+HKR,,SBIOSPowerUpRetry,%REG_DWORD%,1
+HKR,,SurpriseRemovalSupport,%REG_DWORD%,1
+HKR,,UserModeDListDriverName,%REG_MULTI_SZ%,"%13%\nvinitx.dll"
+HKR,,UserModeDListDriverName,%REG_MULTI_SZ%,"nvinitx.dll"
+HKR,,UserModeDListDriverNameWow,%REG_MULTI_SZ%,"%13%\nvinit.dll"
+HKR,,UserModeDListDriverNameWow,%REG_MULTI_SZ%,"nvinit.dll"
 HKR,,UserModeDriverGUID,%REG_SZ%,"{9A516B97-E7C1-451B-9165-C5035994A3F5}"
 HKR,,VarBusLinkWidth,%REG_DWORD%,0
+HKR,,WaitForFirstFlip,%REG_DWORD%,1
 
 [nv_msiSupport_addreg]
 HKR,"Interrupt Management",,0x00000010
