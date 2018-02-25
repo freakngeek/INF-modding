@@ -2791,6 +2791,10 @@ HKR,,UserModeDriverName,%REG_MULTI_SZ%,%13%\nvldumdx.dll,%13%\nvldumdx.dll,%13%\
 HKR,,UserModeDriverName,%REG_MULTI_SZ%,nvd3dumx.dll,nvwgf2umx.dll,nvwgf2umx.dll,nvwgf2umx.dll
 HKR,,UserModeDriverNameWoW,%REG_MULTI_SZ%,%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll,%13%\nvldumd.dll
 HKR,,UserModeDriverNameWoW,%REG_MULTI_SZ%,nvd3dum.dll,nvwgf2um.dll,nvwgf2um.dll,nvwgf2um.dll
+HKR,,VulkanDriverName,%REG_SZ%,"%13%\nv-vk64.json"
+HKR,,VulkanDriverNameWoW,%REG_SZ%,"%13%\nv-vk32.json"
+HKR,,VulkanImplicitLayers,%REG_SZ%,"%13%\nv-vk64.json"
+HKR,,VulkanImplicitLayersWow,%REG_SZ%,"%13%\nv-vk32.json"
 
 [nv_commonCoinstaller_addreg]
 HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6439085.dll,NvGenericCoInstall"
