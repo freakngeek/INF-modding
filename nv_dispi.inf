@@ -3003,15 +3003,6 @@ HKR,,RmMaintainTVStandard,%REG_DWORD%,1
 HKR,,RmPmuperfmonSampling,%REG_DWORD%,0
 HKR,,RmUnrollBurstForFbstop,%REG_DWORD%,1
 HKR,,RmUseSWI2C,%REG_DWORD%,1
-HKR,,SBIOSPowerUpRetry,%REG_DWORD%,1
-HKR,,SurpriseRemovalSupport,%REG_DWORD%,1
-HKR,,UserModeDListDriverName,%REG_MULTI_SZ%,"%13%\nvinitx.dll"
-HKR,,UserModeDListDriverName,%REG_MULTI_SZ%,"nvinitx.dll"
-HKR,,UserModeDListDriverNameWow,%REG_MULTI_SZ%,"%13%\nvinit.dll"
-HKR,,UserModeDListDriverNameWow,%REG_MULTI_SZ%,"nvinit.dll"
-HKR,,UserModeDriverGUID,%REG_SZ%,"{9A516B97-E7C1-451B-9165-C5035994A3F5}"
-HKR,,VarBusLinkWidth,%REG_DWORD%,0
-HKR,,WaitForFirstFlip,%REG_DWORD%,1
 
 [nv_msiSupport_addreg]
 HKR,"Interrupt Management",,0x00000010
