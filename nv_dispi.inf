@@ -3062,15 +3062,19 @@ OpenCL.dll,OpenCL32.dll,,0x00004000
 OpenCL64.dll,,,0x00004000
 
 [nv_opengl_addreg]
+HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DLL,%REG_SZ%,"%13%\nvoglv64.dll"
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DLL,%REG_SZ%,"nvoglv64"
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DriverVersion,%REG_DWORD%,0x00001000
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",Flags,%REG_DWORD%,0x00000003
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",Version,%REG_DWORD%,0x00000002
+HKLM,"Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DLL,%REG_SZ%,"%13%\nvoglv32.dll"
 HKLM,"Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DLL,%REG_SZ%,"nvoglv32"
 HKLM,"Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",DriverVersion,%REG_DWORD%,0x00001000
 HKLM,"Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",Flags,%REG_DWORD%,0x00000003
 HKLM,"Software\Wow6432Node\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\MSOGL",Version,%REG_DWORD%,0x00000002
+HKR,,OpenGLDriverName,%REG_MULTI_SZ%,"%13%\nvoglv64.dll"
 HKR,,OpenGLDriverName,%REG_MULTI_SZ%,"nvoglv64"
+HKR,,OpenGLDriverNameWoW,%REG_MULTI_SZ%,"%13%\nvoglv32.dll"
 HKR,,OpenGLDriverNameWoW,%REG_MULTI_SZ%,"nvoglv32"
 HKR,,OpenGLFlags,%REG_DWORD%,0x00000003
 HKR,,OpenGLFlagsWoW,%REG_DWORD%,0x00000003
