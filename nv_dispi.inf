@@ -297,9 +297,9 @@ HKLM,"Software\NVIDIA Corporation\Global\FTS",EnableSRS1961,%REG_DWORD%,1
 HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 
 [Manufacturer]
-%NVIDIA% = NVIDIA,NTamd64.10.0,NTamd64.10.0...14310
+%NVIDIA% = NVIDIA,NTamd64.10.0,NTamd64.10.0...14393
 
-[NVIDIA.NTamd64.10.0...14310]
+[NVIDIA.NTamd64.10.0...14393]
 ;PCI-ID's by www.laptopvideo2go.com
 %NVIDIA_DEV.06A0% = win10adesktop,      PCI\VEN_10DE&DEV_06A0
 %NVIDIA_DEV.06B0% = win10adesktop,      PCI\VEN_10DE&DEV_06B0
@@ -1891,7 +1891,7 @@ nvwgf2umx_cfg.dll = 1
 [ControlFlags]
 ExcludeFromSelect = *
 
-;Desktop[ Settings by www.laptopvideo2go.com
+;Desktop Settings by www.laptopvideo2go.com
 
 [win10desktop]
 AddReg = nv_DRS_addreg
