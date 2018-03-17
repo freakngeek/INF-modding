@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.097
+; FreaknGeek & StefanG3D INF version 6.098
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,7 +9,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 01/31/2018, 23.21.13.9085
+DriverVer   = 02/28/2018, 23.21.13.9105
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -297,9 +297,9 @@ HKLM,"Software\NVIDIA Corporation\Global\FTS",EnableSRS1961,%REG_DWORD%,1
 HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 
 [Manufacturer]
-%NVIDIA% = NVIDIA,NTamd64.10.0,NTamd64.10.0...14393
+%NVIDIA% = NVIDIA,NTamd64.10.0,NTamd64.10.0...14310
 
-[NVIDIA.NTamd64.10.0...14393]
+[NVIDIA.NTamd64.10.0...14310]
 ;PCI-ID's by www.laptopvideo2go.com
 %NVIDIA_DEV.06A0% = win10adesktop,      PCI\VEN_10DE&DEV_06A0
 %NVIDIA_DEV.06B0% = win10adesktop,      PCI\VEN_10DE&DEV_06B0
@@ -1891,7 +1891,7 @@ nvwgf2umx_cfg.dll = 1
 [ControlFlags]
 ExcludeFromSelect = *
 
-;Desktop Settings by www.laptopvideo2go.com
+;Desktop[ Settings by www.laptopvideo2go.com
 
 [win10desktop]
 AddReg = nv_DRS_addreg
@@ -1915,11 +1915,16 @@ CopyFiles = nv_nvgrid_copyfiles
 CopyFiles = nv_nvgsync_copyfiles
 CopyFiles = nv_nvsmi_copyfiles
 CopyFiles = nv_opencl_copyfiles
+CopyFiles = nv_sysDrivers_RS_copyfiles
 CopyFiles = nv_sysDrivers_copyfiles
+CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
+CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
 CopyFiles = nv_vulkanRTInstaller_copyfiles
 CopyINF=nvhda.inf,nvstusb.inf,nvvadarm.inf
+DelFiles = nv_detoured32_delfiles
+DelFiles = nv_detoured_delfiles
 DelFiles = nv_nvsmi_delfiles
 DelFiles = nv_sysDrivers_delfiles
 DelFiles = nv_system32_delfiles
@@ -1930,8 +1935,10 @@ NVAllowHDAudioPreStage = 1
 NVAllowIR3DDriverPreStage = 2
 NVAllowMCVirtualAudioPreStage = 1
 NVCheckVersion = 1
+NVDefaultBPP = 32
 NVSupport3DVision = 2
 NVSupport3DVisionForOEM = 1
+NVSupportAnsel = 1
 NVSupportDisplayUpdate = 1
 NVSupportGFExperienceExtendedOptions = 1
 NVSupportGFExperienceOEM = 1
@@ -1940,7 +1947,6 @@ NVSupportNVWmi = 2
 NVSupportNVWmiForOEM = 2
 NVSupportNview = 1
 NVSupportNviewForOEM = 1
-NVSupportAnsel = 1
 NVSupportOptimus = 1
 NVSupportPerfDriver = 1
 NVSupportPhysx = 1
@@ -1987,11 +1993,16 @@ CopyFiles = nv_nvgrid_copyfiles
 CopyFiles = nv_nvgsync_copyfiles
 CopyFiles = nv_nvsmi_copyfiles
 CopyFiles = nv_opencl_copyfiles
+CopyFiles = nv_sysDrivers_RS_copyfiles
 CopyFiles = nv_sysDrivers_copyfiles
+CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
+CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
 CopyFiles = nv_vulkanRTInstaller_copyfiles
 CopyINF=nvhda.inf,nvstusb.inf,nvvadarm.inf
+DelFiles = nv_detoured32_delfiles
+DelFiles = nv_detoured_delfiles
 DelFiles = nv_nvsmi_delfiles
 DelFiles = nv_sysDrivers_delfiles
 DelFiles = nv_system32_delfiles
@@ -2002,8 +2013,10 @@ NVAllowHDAudioPreStage = 1
 NVAllowIR3DDriverPreStage = 2
 NVAllowMCVirtualAudioPreStage = 1
 NVCheckVersion = 1
+NVDefaultBPP = 32
 NVSupport3DVision = 2
 NVSupport3DVisionForOEM = 1
+NVSupportAnsel = 1
 NVSupportDisplayUpdate = 1
 NVSupportGFExperienceExtendedOptions = 1
 NVSupportGFExperienceOEM = 1
@@ -2012,7 +2025,6 @@ NVSupportNVWmi = 2
 NVSupportNVWmiForOEM = 2
 NVSupportNview = 1
 NVSupportNviewForOEM = 1
-NVSupportAnsel = 1
 NVSupportOptimus = 1
 NVSupportPerfDriver = 1
 NVSupportPhysx = 1
@@ -2048,7 +2060,6 @@ AddReg = nv_controlPanel_addreg
 AddReg = nv_global_addreg
 AddReg = nv_miscBase_addreg
 AddReg = nv_opengl_addreg
-AddReg = Mobile_Tweaks
 AddReg = nv_timingRestrictions_addreg
 CopyFiles = nv_Drs_copyfiles
 CopyFiles = nv_containerSetup_copyfiles
@@ -2062,10 +2073,16 @@ CopyFiles = nv_nvgrid_copyfiles
 CopyFiles = nv_nvgsync_copyfiles
 CopyFiles = nv_nvsmi_copyfiles
 CopyFiles = nv_opencl_copyfiles
+CopyFiles = nv_sysDrivers_RS_copyfiles
 CopyFiles = nv_sysDrivers_copyfiles
+CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
+CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
+CopyFiles = nv_vulkanRTInstaller_copyfiles
 CopyINF=nvhda.inf,nvstusb.inf,nvvadarm.inf
+DelFiles = nv_detoured32_delfiles
+DelFiles = nv_detoured_delfiles
 DelFiles = nv_nvsmi_delfiles
 DelFiles = nv_sysDrivers_delfiles
 DelFiles = nv_system32_delfiles
@@ -2076,8 +2093,10 @@ NVAllowHDAudioPreStage = 1
 NVAllowIR3DDriverPreStage = 2
 NVAllowMCVirtualAudioPreStage = 1
 NVCheckVersion = 1
+NVDefaultBPP = 32
 NVSupport3DVision = 2
 NVSupport3DVisionForOEM = 1
+NVSupportAnsel = 1
 NVSupportDisplayUpdate = 1
 NVSupportGFExperienceExtendedOptions = 1
 NVSupportGFExperienceOEM = 1
@@ -2086,7 +2105,6 @@ NVSupportNVWmi = 2
 NVSupportNVWmiForOEM = 2
 NVSupportNview = 1
 NVSupportNviewForOEM = 1
-NVSupportAnsel = 1
 NVSupportOptimus = 1
 NVSupportPerfDriver = 1
 NVSupportPhysx = 1
@@ -2122,7 +2140,6 @@ AddReg = nv_controlPanel_addreg
 AddReg = nv_global_addreg
 AddReg = nv_miscBase_addreg
 AddReg = nv_opengl_addreg
-AddReg = Mobile_Tweaks
 AddReg = nv_timingRestrictions_addreg
 CopyFiles = nv_Drs_copyfiles
 CopyFiles = nv_containerSetup_copyfiles
@@ -2136,10 +2153,16 @@ CopyFiles = nv_nvgrid_copyfiles
 CopyFiles = nv_nvgsync_copyfiles
 CopyFiles = nv_nvsmi_copyfiles
 CopyFiles = nv_opencl_copyfiles
+CopyFiles = nv_sysDrivers_RS_copyfiles
 CopyFiles = nv_sysDrivers_copyfiles
+CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
+CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
+CopyFiles = nv_vulkanRTInstaller_copyfiles
 CopyINF=nvhda.inf,nvstusb.inf,nvvadarm.inf
+DelFiles = nv_detoured32_delfiles
+DelFiles = nv_detoured_delfiles
 DelFiles = nv_nvsmi_delfiles
 DelFiles = nv_sysDrivers_delfiles
 DelFiles = nv_system32_delfiles
@@ -2150,8 +2173,10 @@ NVAllowHDAudioPreStage = 1
 NVAllowIR3DDriverPreStage = 2
 NVAllowMCVirtualAudioPreStage = 1
 NVCheckVersion = 1
+NVDefaultBPP = 32
 NVSupport3DVision = 2
 NVSupport3DVisionForOEM = 1
+NVSupportAnsel = 1
 NVSupportDisplayUpdate = 1
 NVSupportGFExperienceExtendedOptions = 1
 NVSupportGFExperienceOEM = 1
@@ -2160,7 +2185,6 @@ NVSupportNVWmi = 2
 NVSupportNVWmiForOEM = 2
 NVSupportNview = 1
 NVSupportNviewForOEM = 1
-NVSupportAnsel = 1
 NVSupportOptimus = 1
 NVSupportPerfDriver = 1
 NVSupportPhysx = 1
@@ -2767,8 +2791,8 @@ HKR,,internalDisplayDeviceOverride
 HKR,,nvEDIDPruning
 
 [nv_coinstaller_copyfiles]
-nvdispco6439085.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6439085.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6439101.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6439101.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonBase_addreg]
 HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
