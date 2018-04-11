@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.103
+; FreaknGeek & StefanG3D INF version 6.104
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -928,6 +928,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1BB6% = win10amobile,       PCI\VEN_10DE&DEV_1BB6
 %NVIDIA_DEV.1BB7% = win10amobile,       PCI\VEN_10DE&DEV_1BB7
 %NVIDIA_DEV.1BB8% = win10amobile,       PCI\VEN_10DE&DEV_1BB8
+%NVIDIA_DEV.1BB9% = win10amobile,       PCI\VEN_10DE&DEV_1BB9
 %NVIDIA_DEV.1BBA% = win10adesktop,      PCI\VEN_10DE&DEV_1BBA
 %NVIDIA_DEV.1BBB% = win10amobile,       PCI\VEN_10DE&DEV_1BBB
 %NVIDIA_DEV.1BBD% = win10adesktop,      PCI\VEN_10DE&DEV_1BBD
@@ -1006,6 +1007,9 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1CB7% = win10adesktop,      PCI\VEN_10DE&DEV_1CB7
 %NVIDIA_DEV.1CB8% = win10adesktop,      PCI\VEN_10DE&DEV_1CB8
 %NVIDIA_DEV.1CB9% = win10adesktop,      PCI\VEN_10DE&DEV_1CB9
+%NVIDIA_DEV.1CBA% = win10adesktop,      PCI\VEN_10DE&DEV_1CBA
+%NVIDIA_DEV.1CBB% = win10adesktop,      PCI\VEN_10DE&DEV_1CBB
+%NVIDIA_DEV.1CBC% = win10adesktop,      PCI\VEN_10DE&DEV_1CBC
 %NVIDIA_DEV.1CBF% = win10adesktop,      PCI\VEN_10DE&DEV_1CBF
 %NVIDIA_DEV.1CC2% = win10adesktop,      PCI\VEN_10DE&DEV_1CC2
 %NVIDIA_DEV.1D00% = win10adesktop,      PCI\VEN_10DE&DEV_1D00
@@ -1676,6 +1680,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1BB6% = win10mobile,        PCI\VEN_10DE&DEV_1BB6
 %NVIDIA_DEV.1BB7% = win10mobile,        PCI\VEN_10DE&DEV_1BB7
 %NVIDIA_DEV.1BB8% = win10mobile,        PCI\VEN_10DE&DEV_1BB8
+%NVIDIA_DEV.1BB9% = win10mobile,        PCI\VEN_10DE&DEV_1BB9
 %NVIDIA_DEV.1BBA% = win10desktop,       PCI\VEN_10DE&DEV_1BBA
 %NVIDIA_DEV.1BBB% = win10mobile,        PCI\VEN_10DE&DEV_1BBB
 %NVIDIA_DEV.1BBD% = win10desktop,       PCI\VEN_10DE&DEV_1BBD
@@ -1754,6 +1759,9 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1CB7% = win10desktop,       PCI\VEN_10DE&DEV_1CB7
 %NVIDIA_DEV.1CB8% = win10desktop,       PCI\VEN_10DE&DEV_1CB8
 %NVIDIA_DEV.1CB9% = win10desktop,       PCI\VEN_10DE&DEV_1CB9
+%NVIDIA_DEV.1CBA% = win10desktop,       PCI\VEN_10DE&DEV_1CBA
+%NVIDIA_DEV.1CBB% = win10desktop,       PCI\VEN_10DE&DEV_1CBB
+%NVIDIA_DEV.1CBC% = win10desktop,       PCI\VEN_10DE&DEV_1CBC
 %NVIDIA_DEV.1CBF% = win10desktop,       PCI\VEN_10DE&DEV_1CBF
 %NVIDIA_DEV.1CC2% = win10desktop,       PCI\VEN_10DE&DEV_1CC2
 %NVIDIA_DEV.1D00% = win10desktop,       PCI\VEN_10DE&DEV_1D00
@@ -3897,6 +3905,7 @@ NVIDIA_DEV.1BB5 = "NVIDIA Quadro P5200"
 NVIDIA_DEV.1BB6 = "NVIDIA Quadro P5000"
 NVIDIA_DEV.1BB7 = "NVIDIA Quadro P4000"
 NVIDIA_DEV.1BB8 = "NVIDIA Quadro P3000"
+NVIDIA_DEV.1BB9 = "NVIDIA Quadro P4200"
 NVIDIA_DEV.1BBA = "NVIDIA Graphics Device"
 NVIDIA_DEV.1BBB = "NVIDIA Quadro P3200"
 NVIDIA_DEV.1BBD = "NVIDIA Graphics Device"
@@ -3975,6 +3984,9 @@ NVIDIA_DEV.1CB6 = "NVIDIA Quadro P620"
 NVIDIA_DEV.1CB7 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CB8 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CB9 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1CBA = "NVIDIA Quadro P2000"
+NVIDIA_DEV.1CBB = "NVIDIA Quadro P1000"
+NVIDIA_DEV.1CBC = "NVIDIA Quadro P600"
 NVIDIA_DEV.1CBF = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CC2 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1D00 = "NVIDIA Graphics Device"
