@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.108
+; FreaknGeek & StefanG3D INF version 6.109
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -497,6 +497,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.11B6% = win10desktop,       PCI\VEN_10DE&DEV_11B6
 %NVIDIA_DEV.11B7% = win10desktop,       PCI\VEN_10DE&DEV_11B7
 %NVIDIA_DEV.11B8% = win10desktop,       PCI\VEN_10DE&DEV_11B8
+%NVIDIA_DEV.11B9% = win10desktop,       PCI\VEN_10DE&DEV_11B9
 %NVIDIA_DEV.11BA% = win10desktop,       PCI\VEN_10DE&DEV_11BA
 %NVIDIA_DEV.11BB% = win10desktop,       PCI\VEN_10DE&DEV_11BB
 %NVIDIA_DEV.11BC% = win10mobile,        PCI\VEN_10DE&DEV_11BC
@@ -2474,6 +2475,7 @@ NVIDIA_DEV.11B4 = "NVIDIA Quadro K4200"
 NVIDIA_DEV.11B6 = "NVIDIA Quadro K3100M "
 NVIDIA_DEV.11B7 = "NVIDIA Quadro K4100M"
 NVIDIA_DEV.11B8 = "NVIDIA Quadro K5100M / GRID K5100M"
+NVIDIA_DEV.11B9 = "NVIDIA GK104GLM"
 NVIDIA_DEV.11BA = "NVIDIA Quadro K5000"
 NVIDIA_DEV.11BB = "NVIDIA Quadro 4100"
 NVIDIA_DEV.11BC = "NVIDIA Quadro K5000M"
