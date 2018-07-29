@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.111
+; FreaknGeek & StefanG3D INF version 6.112
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -923,6 +923,8 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1CBC% = win10desktop,       PCI\VEN_10DE&DEV_1CBC
 %NVIDIA_DEV.1CBF% = win10desktop,       PCI\VEN_10DE&DEV_1CBF
 %NVIDIA_DEV.1CC2% = win10desktop,       PCI\VEN_10DE&DEV_1CC2
+%NVIDIA_DEV.1CCC% = win10mobile,        PCI\VEN_10DE&DEV_1CCC
+%NVIDIA_DEV.1CCD% = win10mobile,        PCI\VEN_10DE&DEV_1CCD
 %NVIDIA_DEV.1D00% = win10desktop,       PCI\VEN_10DE&DEV_1D00
 %NVIDIA_DEV.1D01% = win10desktop,       PCI\VEN_10DE&DEV_1D01
 %NVIDIA_DEV.1D10% = win10mobile,        PCI\VEN_10DE&DEV_1D10
@@ -961,6 +963,10 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1DF4% = win10desktop,       PCI\VEN_10DE&DEV_1DF4
 %NVIDIA_DEV.1DFA% = win10desktop,       PCI\VEN_10DE&DEV_1DFA
 %NVIDIA_DEV.1DFD% = win10desktop,       PCI\VEN_10DE&DEV_1DFD
+%NVIDIA_DEV.1E07% = win10desktop,       PCI\VEN_10DE&DEV_1E07
+%NVIDIA_DEV.1E3C% = win10desktop,       PCI\VEN_10DE&DEV_1E3C
+%NVIDIA_DEV.1E87% = win10desktop,       PCI\VEN_10DE&DEV_1E87
+%NVIDIA_DEV.1EAB% = win10mobile,        PCI\VEN_10DE&DEV_1EAB
 
 [DestinationDirs]
 DefaultDestDir            = 11
@@ -2904,6 +2910,8 @@ NVIDIA_DEV.1CBB = "NVIDIA Quadro P1000"
 NVIDIA_DEV.1CBC = "NVIDIA Quadro P600"
 NVIDIA_DEV.1CBF = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CC2 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1CCC = "NVIDIA GP107BM"
+NVIDIA_DEV.1CCD = "NVIDIA GP107BM"
 NVIDIA_DEV.1D00 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1D01 = "NVIDIA GeForce GT 1030"
 NVIDIA_DEV.1D10 = "NVIDIA GeForce MX150"
@@ -2942,6 +2950,10 @@ NVIDIA_DEV.1DF3 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DF4 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DFA = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DFD = "NVIDIA Graphics Device"
+NVIDIA_DEV.1E07 = "NVIDIA GV102"
+NVIDIA_DEV.1E3C = "NVIDIA GV102GL"
+NVIDIA_DEV.1E87 = "NVIDIA GV104 [GeForce GTX 1180]"
+NVIDIA_DEV.1EAB = "NVIDIA GV104M"
 
 NVUninstall.desc = "NVIDIA Display Driver"
 REG_BINARY = 0x00000001
