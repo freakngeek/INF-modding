@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.114
+; FreaknGeek & StefanG3D INF version 6.117
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,8 +9,8 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 08/21/2018, 24.21.14.1117
-CatalogFile = nv_disp.CAT
+DriverVer   = 10/02/2018, 25.21.14.1616
+CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
 Default_addreg         = nv_CplInstaller_addreg
@@ -1006,6 +1006,7 @@ nv_vulkanRTInstaller_copyfiles = 01
 1 = %DiskID1%
 
 [SourceDisksFiles]
+DisplayDriverRAS.dll = 1
 MCU.exe = 1
 NvContainerSetup.exe = 1
 NvCplSetupInt.exe = 1
@@ -1066,6 +1067,7 @@ nvldumd.dll = 1
 nvldumdx.dll = 1
 nvmcumd.dll = 1
 nvml.dll = 1
+nvofapi.dll = 1
 nvoglshim32.dll = 1
 nvoglshim64.dll = 1
 nvoglv32.dll = 1
@@ -1093,11 +1095,8 @@ ExcludeFromSelect = *
 ;Desktop[ Settings by www.laptopvideo2go.com
 
 [win10]
-AddReg = nv_DRS_addreg
-AddReg = nv_FTS_addreg
 AddReg = nv_commonBase_addreg
 AddReg = nv_commonDisplayModes_addreg
-AddReg = nv_controlPanel_addreg
 AddReg = nv_global_addreg
 AddReg = nv_miscBase_addreg
 AddReg = nv_opengl_addreg
@@ -1120,6 +1119,7 @@ CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
 CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
+CopyINF = nvppc.inf
 CopyFiles = nv_vulkanRTInstaller_copyfiles
 DelFiles = nv_detoured32_delfiles
 DelFiles = nv_detoured_delfiles
@@ -1141,6 +1141,8 @@ NVSupportDisplayUpdate = 1
 NVSupportGFExperienceExtendedOptions = 1
 NVSupportGFExperienceOEM = 1
 NVSupportGFExperienceUDA = 1
+NVSupportNGX = 1
+NVSupportPPC = 1
 NVSupportNVWmi = 2
 NVSupportNVWmiForOEM = 2
 NVSupportNview = 1
@@ -1148,8 +1150,8 @@ NVSupportNviewForOEM = 1
 NVSupportOptimus = 1
 NVSupportPerfDriver = 1
 NVSupportPhysx = 1
-NvBlockTH1Install = 1
 NvSupportMSHybrid = 1
+NvCopyOpenCL = 1
 RegisterDLLs = nv_common_registerdll
 
 [win10.CoInstallers]
@@ -1170,20 +1172,24 @@ DelService = %13%\nvkflt, 0x00000200
 
 [IncludedSubPackages]
 Display.Driver = DisplayDriverExt.dll
-Display.Driver = NvContainerSetup.exe
 Display.Driver = mcu.exe
+Display.Driver = NvContainerSetup.exe
 Display.Driver = nvdispco64.dll
 Display.Driver = nvdispgenco64.dll
-Display.Optimus = *.dll,*.nvi,*.mof
+Display.Driver = NVFBCPlugin.dll
+Display.Driver = NVFBCPlugin64.dll
+Display.Driver = nvofapi.dll
 Display.Update = *.dll,*.nvi
+DisplayDriverCrashAnalyzer = *.*
 NV3DVision = NV3DVisionExt.dll,NV3DVision.nvi,3DVision.exe,nvst3*.chm
-NV3DVisionUSB.Driver = nvir3dgenco*.dll,NVIRUSB.nvi,NVIRUSBExt.dll,nvstusb.inf,nvstusb.cat,nvstusb*.sys
+NV3DVisionUSB.Driver = nvir3dgenco*.dll,nvir3dco*.exe,NVIRUSB.nvi,NVIRUSBExt.dll,nvstusb.inf,nvstusb.cat,nvstusb*.sys
+NvCamera = *.*
 NVI2 = presentations.cfg,presentations.dll,progress.htm
 NVI2 = theme.cfg,*.ui.forms,*.ui.strings,*.png,NVI2*.dll,NVPrxy*.dll,NVI2SystemService*.sys,NVNetworkService.exe,NVNetworkServiceAPI.dll,NvInstallerUtil.dll
+NvTelemetry = *.*
 NVWMI = NVWMIExt.dll,NVWmi.nvi,nvWmi.mof,nvWmi.chm,nvPerfProvider.man,nvWmi*.exe,Samples.7z
 NVWMI = NVWMIExt.dll,NVWmi.nvi,nvWmi.mof,nvWmi.chm,nvPerfProvider.man,nvWmi64.exe,Samples.7z
-NvCamera = *.*
-NvTelemetry = *.*
+PPC = *.*
 Update.Core = *.dll,*.nvi,*.exe
 
 [SignatureAttributes]
@@ -1252,18 +1258,9 @@ HKCU,"Software\NVIDIA Corporation\Global\NvCplApi"
 HKCU,"Software\NVIDIA Corporation\Global\OpenGL"
 HKCU,"Software\NVIDIA Corporation\Global\Stereo3D"
 HKCU,"Software\NVIDIA Corporation\Global\UserLoggedIn"
+HKCU,"Software\NVIDIA Corporation\NVIDIA Control Panel"
 HKCU,"Software\NVIDIA Corporation\NVPMAPI.001.006"
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",D3PCLatency
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableAggressivePStateOnly
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableForceIgpuDgpuFromUI
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableGC6InDisplayOffState
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableMsHybrid
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableMsHybridHeads
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",EnableXGPUSupport
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",RMUseAggressiveGC6
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm",SurpriseRemovalSupport
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm\DisplayDatabase",1641970VRcontext
-HKLM,"SYSTEM\CurrentControlSet\Services\nvlddmkm\DisplayDatabase",1641970context
+HKCU,"Software\NVIDIA Corporation\NvControlPanel2"
 HKLM,"Software\Khronos\OpenCL\Vendors","nvopencl.dll"
 HKLM,"Software\Microsoft\Windows Media Foundation",EMUOPM
 HKLM,"Software\Microsoft\Windows NT\CurrentVersion\OpenGLDrivers\RIVATNT"
@@ -1323,13 +1320,24 @@ HKLM,"System\CurrentControlSet\Services\nv\Performance",Close
 HKLM,"System\CurrentControlSet\Services\nv\Performance",Collect
 HKLM,"System\CurrentControlSet\Services\nv\Performance",Library
 HKLM,"System\CurrentControlSet\Services\nv\Performance",Open
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableCoproc
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableHybridPerfSLI
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableRuntimePowerManagement
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",PreferCoprocOverHybrid
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",WDMDriver
-HKLM,"System\CurrentControlSet\Services\nvlddmkm\NvControlPanel2\RegisteredServers\Overrides","{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
-HKLM,"System\CurrentControlSet\Services\nvlddmkm\NvControlPanel2\RegisteredServers\Overrides","{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
+HKR,"",D3PCLatency
+HKR,"",EnableAggressivePStateOnly
+HKR,"",EnableCoproc
+HKR,"",EnableForceIgpuDgpuFromUI
+HKR,"",EnableGC6InDisplayOffState
+HKR,"",EnableHybridPerfSLI
+HKR,"",EnableMsHybrid
+HKR,"",EnableMsHybridHeads
+HKR,"",EnableRuntimePowerManagement
+HKR,"",EnableXGPUSupport
+HKR,"",PreferCoprocOverHybrid
+HKR,"",RMUseAggressiveGC6
+HKR,"",SurpriseRemovalSupport
+HKR,"",WDMDriver
+HKR,"DisplayDatabase",1641970VRcontext
+HKR,"DisplayDatabase",1641970context
+HKR,"NvControlPanel2\RegisteredServers\Overrides","{6017A978-93AD-4F2F-9E2D-07CF8C8DEBC4}"
+HKR,"NvControlPanel2\RegisteredServers\Overrides","{B53EBC0C-2251-4AE2-9818-FD6AAF843EC2}"
 HKR,,"CX875.HD480i.default.overscan"
 HKR,,"CX875.HD576i.default.overscan"
 HKR,,"D3D_39482904"
@@ -1748,8 +1756,8 @@ HKR,,internalDisplayDeviceOverride
 HKR,,nvEDIDPruning
 
 [nv_coinstaller_copyfiles]
-nvdispco6441117.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6441117.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6441616.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6441616.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonBase_addreg]
 HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
@@ -1778,8 +1786,8 @@ HKR,,VulkanImplicitLayers,%REG_SZ%,"%13%\nv-vk64.json"
 HKR,,VulkanImplicitLayersWow,%REG_SZ%,"%13%\nv-vk32.json"
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6441117.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6441117.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6441616.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6441616.dll,NVDisplayCoInstall"
 
 [nv_commonDisplayModes_addreg]
 ;Resolution table
@@ -1985,6 +1993,14 @@ HKR,,RmPmuperfmonSampling,%REG_DWORD%,0
 HKR,,RmUnrollBurstForFbstop,%REG_DWORD%,1
 HKR,,RmUseSWI2C,%REG_DWORD%,1
 
+[nv_miscBase_service_addreg]
+HKR,"Global\NVTweak",NoPages,%REG_DWORD%,0x0
+HKR,"Global\NVTweak",NvCplAllowStartupDelay,%REG_DWORD%,0x1F4
+HKR,"Global\NVTweak",SRS1673,%REG_DWORD%,1
+HKR,"Global\NVTweak",SRS1700,%REG_DWORD%,1
+HKR,"Global\OEM",WhiteList,%REG_MULTI_SZ%,"sbcinema2.exe, fastboot.exe, checkcd_romlighting.exe, aegis_ii_lightinghelper.exe, securedeletebackground.exe, rogbandnfc.exe"
+HKR,,WDDMv22EnableSmoothTransition,%REG_DWORD%,0
+
 [nv_msiSupport_addreg]
 HKR,"Interrupt Management",,0x00000010
 HKR,"Interrupt Management\MessageSignaledInterruptProperties",,0x00000010
@@ -2001,17 +2017,25 @@ AddReg = nv_nvlddmkm_eventlogging_addreg
 
 [nv_nvlddmkm_eventlogging_addreg]
 
-[nv_nvlddmkm_serviceInstall]
-ErrorControl = 0
-LoadOrderGroup = Video
-ServiceBinary = %12%\nvlddmkm.sys
-ServiceType = 1
-StartType = 3
-
 [nv_nvlddmkm_serviceInstallRS]
+AddReg = nv_DRS_addreg
+AddReg = nv_FTS_addreg
+AddReg = nv_controlPanel_addreg
+AddReg = nv_miscBase_service_addreg
 ErrorControl = 0
 LoadOrderGroup = Video
 ServiceBinary = %13%\nvlddmkm.sys
+ServiceType = 1
+StartType = 3
+
+[nv_nvlddmkm_serviceInstall]
+AddReg = nv_DRS_addreg
+AddReg = nv_FTS_addreg
+AddReg = nv_controlPanel_addreg
+AddReg = nv_miscBase_service_addreg
+ErrorControl = 0
+LoadOrderGroup = Video
+ServiceBinary = %12%\nvlddmkm.sys
 ServiceType = 1
 StartType = 3
 
@@ -2074,6 +2098,7 @@ nvinitx.dll,,,
 nvldumdx.dll,,,
 nvoglshim64.dll,,,
 nvoglv64.dll,,,
+nvoptix.dll,,,
 nvrtum64.dll,,,
 nvumdshimx.dll,,,
 nv-vk64.json,,,
@@ -2082,7 +2107,7 @@ nvwgf2umx_cfg.dll,,,
 
 [nv_system32_copyfiles]
 nvapi64.dll,,,0x00004000
-nvcbl64.dll,,,
+nvcbl64.dll,,,0x00004000
 nvcompiler.dll,nvcompiler64.dll,,0x00004000
 nvcuda.dll,nvcuda64.dll,,0x00004000
 nvcuvid.dll,nvcuvid64.dll,,0x00004000
@@ -2102,8 +2127,9 @@ nvmcumd.dll,,,0x00004000
 nvoglshim64.dll,,,0x00004000
 nvoglv64.dll,,,0x00004000
 nvopencl.dll,nvopencl64.dll,,0x00004000
+nvoptix.dll,,,0x00004000
 nvptxJitCompiler.dll,nvptxJitCompiler64.dll,,0x00004000
-nvrtum64.dll,,,
+nvrtum64.dll,,,0x00004000
 nvumdshimx.dll,,,0x00004000
 nv-vk64.json,,,0x00004000
 nvwgf2umx.dll,,,0x00004000
@@ -2183,43 +2209,23 @@ vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x86.exe,,0x00004020
 
 [nv_timingRestrictions_addreg]
 HKR,,NV_R&T,%REG_MULTI_SZ%,"R&T0000=1920,1080,*,30,*,CRTX,OEM,7425,2200,48,56,562,2,5,++I"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=-*,481-719,*,*,*,MEL31C4,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,1024,*,*,*,BNQ76DB,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,800,*,60,*,AOC1580,CVT"
 HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1080,*,60,*,BNQ766A,OEM,13850,2080,48,32,1111,3,5,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1080,*,60,*,HWP26F5.MEL31C1,OEM,14835,2200,88,44,1125,4,5,++"
 HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1200,*,60,*,BNQ766A,OEM,15399,2080,48,32,1235,3,6,+-"
 HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1200,*,60,009D,*,OEM,15399,2080,48,32,1235,3,6,+-"
 HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=2561-,1601-,*,*,0190-019E,DFPX.CRTX.TVX,NONE"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=800-,600-,*,61-,*,BNQ76DB,NONE"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,1024,*,*,*,BNQ76DB,NONE"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1920,1080,*,60,*,HWP26F5.MEL31C1,OEM,14835,2200,88,44,1125,4,5,++"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=1280,800,*,60,*,AOC1580,CVT"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=-*,721-1079,*,*,*,MEL31C4,NONE"
-HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=-*,481-719,*,*,*,MEL31C4,NONE"
 HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=480,1080,*,480,*,*,OEM,29700,550,30,20,1125,25,10,+-"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=7680,4320,*,*,1382-1431,DEL4147,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0000=800-,600-,*,61-,*,BNQ76DB,NONE"
+HKR,,NV_R&T,%REG_SZ_APPEND%,"R&T0001=3840,4320,*,*,1382-1431,DEL4147,NONE"
 
 [nv_vulkanRTInstaller_copyfiles]
 
 [nv_HDAudioInstall]
 HKLM,"Software\NVIDIA Corporation\Installer",HDAudioInstall,%REG_DWORD%,1
-
-[Mobile_Tweaks]
-;Mobile Settings
-HKR,, EnableBrightnessControl,       %REG_DWORD%,    1
-HKR,, FastResume,                    %REG_DWORD%,    0x1
-HKR,, PerfLevelSrc,                  %REG_DWORD%,    0x3333
-HKR,, RMDynamicSLIAllowed,           %REG_DWORD%,    0
-HKR,, RMMaintainDevs,                %REG_DWORD%,    1
-HKR,, RMMaintainTVStandard,          %REG_DWORD%,    1
-HKR,, RotateFlag,                    %REG_DWORD%,    0x40
-
-;Hybrid Settings
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",DisableSmartHybrid,%REG_DWORD%,1
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",HybridPlatformRole,%REG_DWORD%,1
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",HybridSplash,%REG_DWORD%,0
-HKLM,"Software\NVIDIA Corporation\Global\Hybrid",WhiteList,%REG_SZ%,"AlienwareAlienFXController.exe, AlienFusionController.exe"
-
-;Optimus Settings
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",EnableCoproc,%REG_DWORD%,1
-HKLM,"System\CurrentControlSet\Services\nvlddmkm",PreferCoprocOverHybrid,%REG_DWORD%,1
-HKR,,EnableCoprocPowerControl,       %REG_DWORD%,    4
 
 [Strings]
 DiskID1 = "NVIDIA Windows 10 (64 bit) Driver Library Installation Disk 1"
@@ -2891,11 +2897,11 @@ NVIDIA_DEV.1DF3 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DF4 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DFA = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DFD = "NVIDIA Graphics Device"
-NVIDIA_DEV.1E04 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1E07 = "NVIDIA GV102"
+NVIDIA_DEV.1E04 = "NVIDIA GeForce RTX 2080 Ti"
+NVIDIA_DEV.1E07 = "NVIDIA GeForce RTX 2080 Ti"
 NVIDIA_DEV.1E3C = "NVIDIA GV102GL"
-NVIDIA_DEV.1E82 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1E87 = "NVIDIA GV104"
+NVIDIA_DEV.1E82 = "NVIDIA GeForce RTX 2080"
+NVIDIA_DEV.1E87 = "NVIDIA GeForce RTX 2080"
 NVIDIA_DEV.1EAB = "NVIDIA GV104M"
 NVIDIA_DEV.1F02 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1F07 = "NVIDIA Graphics Device"
