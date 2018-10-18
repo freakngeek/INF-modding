@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.117
+; FreaknGeek & StefanG3D INF version 6.118
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,7 +9,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 10/02/2018, 25.21.14.1616
+DriverVer   = 10/10/2018, 25.21.14.1634
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -965,9 +965,11 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1DFD% = win10,PCI\VEN_10DE&DEV_1DFD
 %NVIDIA_DEV.1E04% = win10,PCI\VEN_10DE&DEV_1E04
 %NVIDIA_DEV.1E07% = win10,PCI\VEN_10DE&DEV_1E07
+%NVIDIA_DEV.1E30% = win10,PCI\VEN_10DE&DEV_1E30
 %NVIDIA_DEV.1E3C% = win10,PCI\VEN_10DE&DEV_1E3C
 %NVIDIA_DEV.1E82% = win10,PCI\VEN_10DE&DEV_1E82
 %NVIDIA_DEV.1E87% = win10,PCI\VEN_10DE&DEV_1E87
+%NVIDIA_DEV.1EB0% = win10,PCI\VEN_10DE&DEV_1EB0
 %NVIDIA_DEV.1EAB% = win10,PCI\VEN_10DE&DEV_1EAB
 %NVIDIA_DEV.1F02% = win10,PCI\VEN_10DE&DEV_1F02
 %NVIDIA_DEV.1F07% = win10,PCI\VEN_10DE&DEV_1F07
@@ -1756,8 +1758,8 @@ HKR,,internalDisplayDeviceOverride
 HKR,,nvEDIDPruning
 
 [nv_coinstaller_copyfiles]
-nvdispco6441616.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6441616.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6441634.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6441634.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonBase_addreg]
 HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
@@ -1786,8 +1788,8 @@ HKR,,VulkanImplicitLayers,%REG_SZ%,"%13%\nv-vk64.json"
 HKR,,VulkanImplicitLayersWow,%REG_SZ%,"%13%\nv-vk32.json"
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6441616.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6441616.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6441634.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6441634.dll,NVDisplayCoInstall"
 
 [nv_commonDisplayModes_addreg]
 ;Resolution table
@@ -2899,12 +2901,14 @@ NVIDIA_DEV.1DFA = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DFD = "NVIDIA Graphics Device"
 NVIDIA_DEV.1E04 = "NVIDIA GeForce RTX 2080 Ti"
 NVIDIA_DEV.1E07 = "NVIDIA GeForce RTX 2080 Ti"
+NVIDIA_DEV.1E30 = "NVIDIA Quadro RTX 6000"
 NVIDIA_DEV.1E3C = "NVIDIA GV102GL"
 NVIDIA_DEV.1E82 = "NVIDIA GeForce RTX 2080"
 NVIDIA_DEV.1E87 = "NVIDIA GeForce RTX 2080"
+NVIDIA_DEV.1EB0 = "NVIDIA Quadro RTX 5000"
 NVIDIA_DEV.1EAB = "NVIDIA GV104M"
-NVIDIA_DEV.1F02 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1F07 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1F02 = "NVIDIA GeForce RTX 2070"
+NVIDIA_DEV.1F07 = "NVIDIA GeForce RTX 2070"
 
 
 NVUninstall.desc = "NVIDIA Display Driver"
