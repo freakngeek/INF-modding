@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.127
+; FreaknGeek & StefanG3D INF version 6.128
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -986,6 +986,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1F10% = win10,PCI\VEN_10DE&DEV_1F10
 %NVIDIA_DEV.1F11% = win10,PCI\VEN_10DE&DEV_1F11
 %NVIDIA_DEV.1F50% = win10,PCI\VEN_10DE&DEV_1F50
+%NVIDIA_DEV.1F51% = win10,PCI\VEN_10DE&DEV_1F51
 
 [DestinationDirs]
 DefaultDestDir                 = 11
@@ -2947,6 +2948,7 @@ NVIDIA_DEV.1F08 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1F10 = "NVIDIA GeForce RTX 2070"
 NVIDIA_DEV.1F11 = "NVIDIA GeForce RTX 2060"
 NVIDIA_DEV.1F50 = "NVIDIA GeForce RTX 2070"
+NVIDIA_DEV.1F51 = "NVIDIA GeForce RTX 2060"
 NVUninstall.desc = "NVIDIA Display Driver"
 
 REG_BINARY = 0x00000001
