@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.132
+; FreaknGeek & StefanG3D INF version 6.133
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,7 +9,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 02/22/2019, 26.21.14.2165
+DriverVer   = 03/14/2019, 26.21.14.3000
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -899,6 +899,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1C8D% = win10,PCI\VEN_10DE&DEV_1C8D
 %NVIDIA_DEV.1C8E% = win10,PCI\VEN_10DE&DEV_1C8E
 %NVIDIA_DEV.1C8F% = win10,PCI\VEN_10DE&DEV_1C8F
+%NVIDIA_DEV.1C91% = win10,PCI\VEN_10DE&DEV_1C91
 %NVIDIA_DEV.1C92% = win10,PCI\VEN_10DE&DEV_1C92
 %NVIDIA_DEV.1C98% = win10,PCI\VEN_10DE&DEV_1C98
 %NVIDIA_DEV.1C99% = win10,PCI\VEN_10DE&DEV_1C99
@@ -2863,6 +2864,7 @@ NVIDIA_DEV.1C8C = "NVIDIA GeForce GTX 1050 Ti"
 NVIDIA_DEV.1C8D = "NVIDIA GeForce GTX 1050"
 NVIDIA_DEV.1C8E = "NVIDIA GP107M"
 NVIDIA_DEV.1C8F = "NVIDIA GeForce GTX 1050 Ti with Max-Q Design"
+NVIDIA_DEV.1C91 = "NVIDIA GeForce GTX 1050 with Max-Q Design"
 NVIDIA_DEV.1C92 = "NVIDIA GeForce GTX 1050"
 NVIDIA_DEV.1C98 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1C99 = "NVIDIA Graphics Device"
