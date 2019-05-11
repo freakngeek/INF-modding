@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.136
+; FreaknGeek & StefanG3D INF version 6.137
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,7 +9,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 04/19/2019, 25.21.14.2542
+DriverVer   = 05/05/2019, 26.21.14.3064
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -49,6 +49,8 @@ nv3dSLV.chm
 nv3dSVE.chm
 nv3dTHA.chm
 nv3dTRK.chm
+nvDevTools.dll
+nvDevToolsR.dll
 nvLicensingSR.dll
 nvSmartMax.dll
 nvSmartMax64.dll
@@ -88,6 +90,7 @@ nvcplTHA.chm
 nvcplTRK.chm
 nvcplui.exe
 nvcpluir.dll
+nvdev.chm
 nvdisps.dll
 nvdispsr.dll
 nvdsp.chm
@@ -1009,6 +1012,7 @@ nv_system32_delfiles           = 11
 nv_system64_delfiles           = 16425
 nv_syswow64_copyfiles          = 10,SysWow64
 nv_syswow64_RS_copyfiles       = 13
+nv_telemetry_RS_copyfiles      = 13
 nv_license_copyfiles           = 16422,NVIDIA Corporation
 nv_nvgrid_copyfiles            = 16422,NVIDIA Corporation\Display
 nv_Drs_copyfiles               = 12,NVIDIA Corporation\Drs
@@ -1039,6 +1043,7 @@ NvIFR.dll = 1
 NvIFR64.dll = 1
 NvIFROpenGL32.dll = 1
 NvIFROpenGL64.dll = 1
+NvTelemetry64.dll = 1
 OpenCL32.dll = 1
 OpenCL64.dll = 1
 dbInstaller.exe = 1
@@ -1053,6 +1058,7 @@ nvEncMFThevc.dll = 1
 nvEncMFThevcx.dll = 1
 nvEncodeAPI.dll = 1
 nvEncodeAPI64.dll = 1
+nv_Icc_AdvancedColor_Identity.icm = 1
 nvapi.dll = 1
 nvapi64.dll = 1
 nvcbl64.dll = 1
@@ -1091,6 +1097,7 @@ nvldumdx.dll = 1
 nvmcumd.dll = 1
 nvml.dll = 1
 nvofapi.dll = 1
+nvofapi64.dll = 1
 nvoglshim32.dll = 1
 nvoglshim64.dll = 1
 nvoglv32.dll = 1
@@ -1125,6 +1132,7 @@ AddReg = nv_miscBase_addreg
 AddReg = nv_opengl_addreg
 AddReg = nv_timingRestrictions_addreg
 CopyFiles = nv_Drs_copyfiles
+CopyFiles = nv_SourceDrive_copyfiles
 CopyFiles = nv_containerSetup_copyfiles
 CopyFiles = nv_cplSetup_copyfiles
 CopyFiles = nv_detoured32_copyfiles
@@ -1269,6 +1277,9 @@ nvdrsdb.bin,,,0x00004000
 
 [nv_affinitySupport_addreg]
 HKR, "Interrupt Management\Affinity Policy", DevicePolicy, 0x00010001, 1
+
+[nv_SourceDrive_copyfiles]
+DisplayDriverRAS.dll,,,0x00000010
 
 [nv_clearRegistrySwitches_delreg]
 HKCU,"Software\Classes\VirtualStore\MACHINE\Software\NVIDIA Corporation\Global\NVTweak"
@@ -1781,8 +1792,8 @@ HKR,,internalDisplayDeviceOverride
 HKR,,nvEDIDPruning
 
 [nv_coinstaller_copyfiles]
-nvdispco6441763.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6441763.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6443064.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6443064.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonBase_addreg]
 HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
@@ -1811,8 +1822,8 @@ HKR,,VulkanImplicitLayers,%REG_SZ%,"%13%\nv-vk64.json"
 HKR,,VulkanImplicitLayersWow,%REG_SZ%,"%13%\nv-vk32.json"
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6441763.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6441763.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6443064.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6443064.dll,NVDisplayCoInstall"
 
 [nv_commonDisplayModes_addreg]
 ;Resolution table
@@ -1820,7 +1831,6 @@ HKR,, NV_Modes, %REG_MULTI_SZ%,  "{*}S 720x480x8,16,32,64=1; 720x576x8,16,32,64=
 HKR,, NV_Modes, %REG_SZ_APPEND%, " 1152x864x8,16,32,64=FFF;"
 
 [nv_common_registerdll]
-11,,nvapi64.dll,1
 
 [nv_containerSetup_copyfiles]
 NvContainerSetup.exe,,,0x00000010
@@ -2025,11 +2035,13 @@ HKR,,RmUnrollBurstForFbstop,%REG_DWORD%,1
 HKR,,RmUseSWI2C,%REG_DWORD%,1
 
 [nv_miscBase_service_addreg]
-HKR,"Global\NVTweak",NoPages,%REG_DWORD%,0x0
+HKR,"Global\NVTweak",NoPages,%REG_DWORD%,0x40120518
+HKR,"Global\NVTweak",NoPages,%REG_DWORD%,0x40120558
 HKR,"Global\NVTweak",NvCplAllowStartupDelay,%REG_DWORD%,0x1F4
 HKR,"Global\NVTweak",SRS1673,%REG_DWORD%,1
 HKR,"Global\NVTweak",SRS1700,%REG_DWORD%,1
 HKR,"Global\OEM",WhiteList,%REG_MULTI_SZ%,"sbcinema2.exe, fastboot.exe, checkcd_romlighting.exe, aegis_ii_lightinghelper.exe, securedeletebackground.exe, rogbandnfc.exe"
+HKR,"WKSStereo",EnableWKSMSStereoSync,%REG_DWORD%,0x0
 HKR,,WDDMv22EnableSmoothTransition,%REG_DWORD%,0
 
 [nv_msiSupport_addreg]
@@ -2050,7 +2062,7 @@ AddReg = nv_nvlddmkm_eventlogging_addreg
 
 [nv_nvlddmkm_serviceInstallRS]
 AddReg = nv_controlPanel_addreg
-AddReg = nv_FTS_addreg__02
+AddReg = nv_FTS_addreg
 AddReg = nv_miscBase_service_addreg
 ErrorControl = 0
 LoadOrderGroup = Video
@@ -2059,9 +2071,9 @@ ServiceType = 1
 StartType = 3
 
 [nv_nvlddmkm_serviceInstall]
-AddReg = nv_FTS_addreg__01
+AddReg = nv_FTS_addreg
 AddReg = nv_controlPanel_addreg
-AddReg = nv_miscBase_service_addreg__01
+AddReg = nv_miscBase_service_addreg
 ErrorControl = 0
 LoadOrderGroup = Video
 ServiceBinary = %12%\nvlddmkm.sys
@@ -2112,20 +2124,19 @@ nvlddmkm.sys,,,
 [nv_sysDrivers_copyfiles]
 nvlddmkm.sys,,,0x00004000
 
-[nv_sysDrivers_delfiles]
-nvarch.sys,,,1
-nvgfx.sys,,,1
-nvkflt.sys,,,1
-nvlddmkm.sys,,,
-
 [nv_system32_RS_copyfiles]
 nvcbl64.dll,,,
 nvd3dumx.dll,,,
 nvd3dumx_cfg.dll,,,
+nvDecMFTMjpeg.dll,,,
+nvDecMFTMjpegx.dll,,,
 nvdlistx.dll,,,
+nvEncMFTH264.dll,,,
+nvEncMFTH264x.dll,,,
+nvEncMFThevc.dll,,,
+nvEncMFThevcx.dll,,,
 nvinitx.dll,,,
 nvldumdx.dll,,,
-nvofapi.dll,,,
 nvoglshim64.dll,,,
 nvoglv64.dll,,,
 nvoptix.dll,,,
@@ -2154,7 +2165,7 @@ NvIFROpenGL.dll,NvIFROpenGL64.dll,,0x00004000
 nvinfo.pb,,,0x00004000
 nvinitx.dll,,,0x00004000
 nvmcumd.dll,,,0x00004000
-nvofapi.dll,,,0x00004000
+nvofapi64.dll,,,0x00004000
 nvoglshim64.dll,,,0x00004000
 nvoglv64.dll,,,0x00004000
 nvopencl64.dll,,,0x00004000
@@ -2174,7 +2185,10 @@ vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x64.exe,,0x00004020
 nvcuvenc.dll,,,
 nvd3dumx.dll,,,
 nvd3dumx_cfg.dll,,,
+nvDecMFTMjpeg.dll,nvDecMFTMjpegx.dll,,0x00004000
 nvdlistx.dll,,,
+nvEncMFTH264.dll,nvEncMFTH264x.dll,,0x00004000
+nvEncMFThevc.dll,nvEncMFThevcx.dll,,0x00004000
 nvencodemft.dll,,,
 nvinfo.pb,,,1
 nvinitx.dll,,,
@@ -2200,6 +2214,7 @@ nvwgf2um.dll,,,
 
 [nv_syswow64_RS_copyfiles]
 DisplayDriverRAS.dll,,,
+nv_Icc_AdvancedColor_Identity.icm,,,
 nvd3dum.dll,,,
 nvd3dum_cfg.dll,,,
 nvdlist.dll,,,
@@ -2228,6 +2243,7 @@ NvFBC.dll,,,0x00004000
 NvIFR.dll,,,0x00004000
 NvIFROpenGL.dll,NvIFROpenGL32.dll,,0x00004000
 nvinit.dll,,,0x00004000
+nvofapi.dll,,,0x00004000
 nvoglshim32.dll,,,0x00004000
 nvoglv32.dll,,,0x00004000
 nvopencl32.dll,,,0x00004000
@@ -2240,6 +2256,14 @@ vulkan-1.dll,vulkan-1-x86.dll,,0x00004020
 vulkan-1-999-0-0-0.dll,vulkan-1-x86.dll,,0x00004020
 vulkaninfo.exe,vulkaninfo-x86.exe,,0x00004020
 vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x86.exe,,0x00004020
+
+[nv_syswow64_delfiles]
+nvDecMFTMjpeg.dll,nvDecMFTMjpeg.dll,,0x00004000
+nvEncMFTH264.dll,nvEncMFTH264.dll,,0x00004000
+nvEncMFThevc.dll,nvEncMFThevc.dll,,0x00004000
+
+[nv_telemetry_RS_copyfiles]
+NvTelemetry64.dll,,,0x00000010
 
 [nv_timingRestrictions_addreg]
 HKR,,NV_R&T,%REG_MULTI_SZ%,"R&T0000=1920,1080,*,30,*,CRTX,OEM,7425,2200,48,56,562,2,5,++I"
