@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.145
+; FreaknGeek & StefanG3D INF version 6.146
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -9,7 +9,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 07/17/2019, 26.21.14.3160
+DriverVer   = 08/24/2019, 26.21.14.3615
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -647,6 +647,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1B87% = win10,PCI\VEN_10DE&DEV_1B87
 %NVIDIA_DEV.1BA0% = win10,PCI\VEN_10DE&DEV_1BA0
 %NVIDIA_DEV.1BA1% = win10,PCI\VEN_10DE&DEV_1BA1
+%NVIDIA_DEV.1BA2% = win10,PCI\VEN_10DE&DEV_1BA2
 %NVIDIA_DEV.1BA9% = win10,PCI\VEN_10DE&DEV_1BA9
 %NVIDIA_DEV.1BAA% = win10,PCI\VEN_10DE&DEV_1BAA
 %NVIDIA_DEV.1BAD% = win10,PCI\VEN_10DE&DEV_1BAD
@@ -3175,6 +3176,7 @@ NVIDIA_DEV.1B84 = "NVIDIA GeForce GTX 1060 3GB"
 NVIDIA_DEV.1B87 = "NVIDIA P104-100"
 NVIDIA_DEV.1BA0 = "NVIDIA GeForce GTX 1080"
 NVIDIA_DEV.1BA1 = "NVIDIA GeForce GTX 1070"
+NVIDIA_DEV.1BA2 = "NVIDIA GeForce GTX 1070"
 NVIDIA_DEV.1BA9 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1BAA = "NVIDIA Graphics Device"
 NVIDIA_DEV.1BAD = "NVIDIA GeForce GTX 1070 Engineering Sample"
