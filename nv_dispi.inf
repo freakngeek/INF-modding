@@ -1,5 +1,6 @@
-; FreaknGeek & StefanG3D INF version 6.149
+; FreaknGeek & StefanG3D INF version 6.149a
 ; http://www.laptopvideo2go.com
+; ignore leftover legacy device ID's, R400+ drivers support Kepler and beyond
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
 ; Copyright (c) NVIDIA Corporation. All rights reserved.
@@ -11,6 +12,10 @@ ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
 DriverVer   = 10/24/2019, 26.21.14.4112
 CatalogFile = NV_DISP.CAT
+
+[nv_coinstaller_copyfiles]
+nvdispco6444112.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6444112.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_CplInstaller]
 Default_addreg         = nv_CplInstaller_addreg
@@ -1820,10 +1825,6 @@ HKR,,_User_DFP0_XEN_Deinterlace
 HKR,,dynEngCtrlEnabled
 HKR,,internalDisplayDeviceOverride
 HKR,,nvEDIDPruning
-
-[nv_coinstaller_copyfiles]
-nvdispco6444112.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6444112.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonBase_addreg]
 HKCR,"Wow6432Node\CLSID\{B63E31D0-87B5-477F-B224-4A35B6BECED6}",,%REG_SZ%,"NVIDIA CUDA Video Encoder"
