@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.156
+; FreaknGeek & StefanG3D INF version 6.157
 ; http://www.laptopvideo2go.com
 ; ignore leftover legacy device ID's, R400+ drivers support Kepler and beyond
 
@@ -10,12 +10,12 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 10/24/2019, 26.21.14.4112
+DriverVer   = 02/24/2020, 26.21.14.4250
 CatalogFile = NV_DISP.CAT
 
 [nv_coinstaller_copyfiles]
-nvdispco6444112.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6444112.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6444250.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6444250.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_CplInstaller]
 Default_addreg         = nv_CplInstaller_addreg
@@ -916,6 +916,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1C91% = win10,PCI\VEN_10DE&DEV_1C91
 %NVIDIA_DEV.1C92% = win10,PCI\VEN_10DE&DEV_1C92
 %NVIDIA_DEV.1C94% = win10,PCI\VEN_10DE&DEV_1C94
+%NVIDIA_DEV.1C96% = win10,PCI\VEN_10DE&DEV_1C96
 %NVIDIA_DEV.1C98% = win10,PCI\VEN_10DE&DEV_1C98
 %NVIDIA_DEV.1C99% = win10,PCI\VEN_10DE&DEV_1C99
 %NVIDIA_DEV.1C9A% = win10,PCI\VEN_10DE&DEV_1C9A
@@ -2933,6 +2934,7 @@ NVIDIA_DEV.1C90 = "NVIDIA GeForce MX150"
 NVIDIA_DEV.1C91 = "NVIDIA GeForce GTX 1050 with Max-Q Design"
 NVIDIA_DEV.1C92 = "NVIDIA GeForce GTX 1050"
 NVIDIA_DEV.1C94 = "NVIDIA GeForce MX350"
+NVIDIA_DEV.1C96 = "NVIDIA GeForce MX350"
 NVIDIA_DEV.1C98 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1C99 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1C9A = "NVIDIA Graphics Device"
