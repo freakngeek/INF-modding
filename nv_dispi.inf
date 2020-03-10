@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 6.159
+; FreaknGeek & StefanG3D INF version 6.160
 ; http://www.laptopvideo2go.com
 ; ignore leftover legacy device ID's, R400+ drivers support Kepler and beyond
 
@@ -10,16 +10,16 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 02/24/2020, 26.21.14.4250
+DriverVer   = 03/04/2020, 26.21.14.4259
 CatalogFile = NV_DISP.CAT
 
 [nv_coinstaller_copyfiles]
-nvdispco6444250.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6444250.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6444259.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6444259.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444250.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444250.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444259.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444259.dll,NVDisplayCoInstall"
 
 [nv_CplInstaller]
 Default_addreg         = nv_CplInstaller_addreg
@@ -948,6 +948,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1CC2% = win10,PCI\VEN_10DE&DEV_1CC2
 %NVIDIA_DEV.1CCC% = win10,PCI\VEN_10DE&DEV_1CCC
 %NVIDIA_DEV.1CCD% = win10,PCI\VEN_10DE&DEV_1CCD
+%NVIDIA_DEV.1CD6% = win10,PCI\VEN_10DE&DEV_1CD6
 %NVIDIA_DEV.1CFA% = win10,PCI\VEN_10DE&DEV_1CFA
 %NVIDIA_DEV.1CFB% = win10,PCI\VEN_10DE&DEV_1CFB
 %NVIDIA_DEV.1D00% = win10,PCI\VEN_10DE&DEV_1D00
@@ -2965,6 +2966,7 @@ NVIDIA_DEV.1CBF = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CC2 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CCC = "NVIDIA GP107BM"
 NVIDIA_DEV.1CCD = "NVIDIA GP107BM"
+NVIDIA_DEV.1CD6 = "NVIDIA GeForce MX250"
 NVIDIA_DEV.1CFA = "NVIDIA Quadro P2000"
 NVIDIA_DEV.1CFB = "NVIDIA Quadro P1000"
 NVIDIA_DEV.1D00 = "NVIDIA Graphics Device"
