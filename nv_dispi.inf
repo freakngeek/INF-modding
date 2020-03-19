@@ -1,6 +1,6 @@
-; FreaknGeek & StefanG3D INF version 6.162
+; FreaknGeek & StefanG3D INF version 6.163
 ; http://www.laptopvideo2go.com
-; ignore leftover legacy device ID's, R400+ drivers support Kepler and beyond
+; ignore leftover legacy device ID's, R440+ drivers support Kepler and beyond
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
 ; Copyright (c) NVIDIA Corporation. All rights reserved.
@@ -10,16 +10,16 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 03/04/2020, 26.21.14.4259
+DriverVer   = 03/13/2020, 26.21.14.4274
 CatalogFile = NV_DISP.CAT
 
 [nv_coinstaller_copyfiles]
-nvdispco6444259.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6444259.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6444274.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6444274.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444259.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444259.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444274.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444274.dll,NVDisplayCoInstall"
 
 [nv_CplInstaller]
 Default_addreg         = nv_CplInstaller_addreg
@@ -1044,6 +1044,7 @@ HKLM,"Software\NVIDIA Corporation\Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%
 %NVIDIA_DEV.1F47% = win10,PCI\VEN_10DE&DEV_1F47
 %NVIDIA_DEV.1F50% = win10,PCI\VEN_10DE&DEV_1F50
 %NVIDIA_DEV.1F51% = win10,PCI\VEN_10DE&DEV_1F51
+%NVIDIA_DEV.1F76% = win10,PCI\VEN_10DE&DEV_1F76
 %NVIDIA_DEV.1F81% = win10,PCI\VEN_10DE&DEV_1F81
 %NVIDIA_DEV.1F82% = win10,PCI\VEN_10DE&DEV_1F82
 %NVIDIA_DEV.1F91% = win10,PCI\VEN_10DE&DEV_1F91
@@ -3080,6 +3081,7 @@ NVIDIA_DEV.1F42 = "NVIDIA GeForce RTX 2060 SUPER"
 NVIDIA_DEV.1F47 = "NVIDIA GeForce RTX 2060 SUPER"
 NVIDIA_DEV.1F50 = "NVIDIA GeForce RTX 2070"
 NVIDIA_DEV.1F51 = "NVIDIA GeForce RTX 2060"
+NVIDIA_DEV.1F76 = "NVIDIA Quadro RTX 3000"
 NVIDIA_DEV.1F81 = "NVIDIA TU117"
 NVIDIA_DEV.1F82 = "NVIDIA GeForce GTX 1650"
 NVIDIA_DEV.1F91 = "NVIDIA GeForce GTX 1650"
