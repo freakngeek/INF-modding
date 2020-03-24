@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF version 7.158
+; FreaknGeek & StefanG3D INF version 7.164
 ; http://www.laptopvideo2go.com
 
 ; NVIDIA Windows 10 (64 bit) Display INF file
@@ -10,7 +10,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 10/24/2019, 26.21.14.4112
+DriverVer   = 03/17/2020, 26.21.14.4575
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
@@ -721,6 +721,9 @@ HKR,"Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 %NVIDIA_DEV.1CC2% = win10,PCI\VEN_10DE&DEV_1CC2
 %NVIDIA_DEV.1CCC% = win10,PCI\VEN_10DE&DEV_1CCC
 %NVIDIA_DEV.1CCD% = win10,PCI\VEN_10DE&DEV_1CCD
+%NVIDIA_DEV.1CD6% = win10,PCI\VEN_10DE&DEV_1CD6
+%NVIDIA_DEV.1CFA% = win10,PCI\VEN_10DE&DEV_1CFA
+%NVIDIA_DEV.1CFB% = win10,PCI\VEN_10DE&DEV_1CFB
 %NVIDIA_DEV.1D00% = win10,PCI\VEN_10DE&DEV_1D00
 %NVIDIA_DEV.1D01% = win10,PCI\VEN_10DE&DEV_1D01
 %NVIDIA_DEV.1D10% = win10,PCI\VEN_10DE&DEV_1D10
@@ -770,11 +773,15 @@ HKR,"Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 %NVIDIA_DEV.1E02% = win10,PCI\VEN_10DE&DEV_1E02
 %NVIDIA_DEV.1E04% = win10,PCI\VEN_10DE&DEV_1E04
 %NVIDIA_DEV.1E07% = win10,PCI\VEN_10DE&DEV_1E07
+%NVIDIA_DEV.1E2D% = win10,PCI\VEN_10DE&DEV_1E2D
+%NVIDIA_DEV.1E2E% = win10,PCI\VEN_10DE&DEV_1E2E
 %NVIDIA_DEV.1E30% = win10,PCI\VEN_10DE&DEV_1E30
 %NVIDIA_DEV.1E36% = win10,PCI\VEN_10DE&DEV_1E36
 %NVIDIA_DEV.1E37% = win10,PCI\VEN_10DE&DEV_1E37
 %NVIDIA_DEV.1E38% = win10,PCI\VEN_10DE&DEV_1E38
 %NVIDIA_DEV.1E3C% = win10,PCI\VEN_10DE&DEV_1E3C
+%NVIDIA_DEV.1E3D% = win10,PCI\VEN_10DE&DEV_1E3D
+%NVIDIA_DEV.1E3E% = win10,PCI\VEN_10DE&DEV_1E3E
 %NVIDIA_DEV.1E78% = win10,PCI\VEN_10DE&DEV_1E78
 %NVIDIA_DEV.1E81% = win10,PCI\VEN_10DE&DEV_1E81
 %NVIDIA_DEV.1E82% = win10,PCI\VEN_10DE&DEV_1E82
@@ -782,11 +789,14 @@ HKR,"Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 %NVIDIA_DEV.1E87% = win10,PCI\VEN_10DE&DEV_1E87
 %NVIDIA_DEV.1E89% = win10,PCI\VEN_10DE&DEV_1E89
 %NVIDIA_DEV.1E90% = win10,PCI\VEN_10DE&DEV_1E90
+%NVIDIA_DEV.1EAB% = win10,PCI\VEN_10DE&DEV_1EAB
+%NVIDIA_DEV.1EAE% = win10,PCI\VEN_10DE&DEV_1EAE
 %NVIDIA_DEV.1EB0% = win10,PCI\VEN_10DE&DEV_1EB0
 %NVIDIA_DEV.1EB1% = win10,PCI\VEN_10DE&DEV_1EB1
 %NVIDIA_DEV.1EB5% = win10,PCI\VEN_10DE&DEV_1EB5
 %NVIDIA_DEV.1EB6% = win10,PCI\VEN_10DE&DEV_1EB6
-%NVIDIA_DEV.1EAB% = win10,PCI\VEN_10DE&DEV_1EAB
+%NVIDIA_DEV.1EB9% = win10,PCI\VEN_10DE&DEV_1EB9
+%NVIDIA_DEV.1EBE% = win10,PCI\VEN_10DE&DEV_1EBE
 %NVIDIA_DEV.1EC2% = win10,PCI\VEN_10DE&DEV_1EC2
 %NVIDIA_DEV.1EC7% = win10,PCI\VEN_10DE&DEV_1EC7
 %NVIDIA_DEV.1ED0% = win10,PCI\VEN_10DE&DEV_1ED0
@@ -799,24 +809,36 @@ HKR,"Global\NVTweak",NvCplEnableSRS1564,%REG_DWORD%,1
 %NVIDIA_DEV.1F10% = win10,PCI\VEN_10DE&DEV_1F10
 %NVIDIA_DEV.1F11% = win10,PCI\VEN_10DE&DEV_1F11
 %NVIDIA_DEV.1F12% = win10,PCI\VEN_10DE&DEV_1F12
+%NVIDIA_DEV.1F14% = win10,PCI\VEN_10DE&DEV_1F14
+%NVIDIA_DEV.1F15% = win10,PCI\VEN_10DE&DEV_1F15
+%NVIDIA_DEV.1F2E% = win10,PCI\VEN_10DE&DEV_1F2E
 %NVIDIA_DEV.1F36% = win10,PCI\VEN_10DE&DEV_1F36
 %NVIDIA_DEV.1F42% = win10,PCI\VEN_10DE&DEV_1F42
 %NVIDIA_DEV.1F47% = win10,PCI\VEN_10DE&DEV_1F47
 %NVIDIA_DEV.1F50% = win10,PCI\VEN_10DE&DEV_1F50
 %NVIDIA_DEV.1F51% = win10,PCI\VEN_10DE&DEV_1F51
+%NVIDIA_DEV.1F76% = win10,PCI\VEN_10DE&DEV_1F76
+%NVIDIA_DEV.1F81% = win10,PCI\VEN_10DE&DEV_1F81
 %NVIDIA_DEV.1F82% = win10,PCI\VEN_10DE&DEV_1F82
 %NVIDIA_DEV.1F91% = win10,PCI\VEN_10DE&DEV_1F91
 %NVIDIA_DEV.1F92% = win10,PCI\VEN_10DE&DEV_1F92
 %NVIDIA_DEV.1F94% = win10,PCI\VEN_10DE&DEV_1F94
 %NVIDIA_DEV.1F95% = win10,PCI\VEN_10DE&DEV_1F95
 %NVIDIA_DEV.1F96% = win10,PCI\VEN_10DE&DEV_1F96
+%NVIDIA_DEV.1F99% = win10,PCI\VEN_10DE&DEV_1F99
+%NVIDIA_DEV.1FAE% = win10,PCI\VEN_10DE&DEV_1FAE
 %NVIDIA_DEV.1FB8% = win10,PCI\VEN_10DE&DEV_1FB8
 %NVIDIA_DEV.1FB9% = win10,PCI\VEN_10DE&DEV_1FB9
+%NVIDIA_DEV.1FBF% = win10,PCI\VEN_10DE&DEV_1FBF
 %NVIDIA_DEV.2182% = win10,PCI\VEN_10DE&DEV_2182
+%NVIDIA_DEV.2183% = win10,PCI\VEN_10DE&DEV_2183
 %NVIDIA_DEV.2184% = win10,PCI\VEN_10DE&DEV_2184
 %NVIDIA_DEV.2187% = win10,PCI\VEN_10DE&DEV_2187
 %NVIDIA_DEV.2191% = win10,PCI\VEN_10DE&DEV_2191
+%NVIDIA_DEV.2192% = win10,PCI\VEN_10DE&DEV_2192
 %NVIDIA_DEV.21C4% = win10,PCI\VEN_10DE&DEV_21C4
+%NVIDIA_DEV.21AE% = win10,PCI\VEN_10DE&DEV_21AE
+%NVIDIA_DEV.21BF% = win10,PCI\VEN_10DE&DEV_21BF
 %NVIDIA_DEV.21D1% = win10,PCI\VEN_10DE&DEV_21D1
 
 [DestinationDirs]
@@ -895,6 +917,7 @@ OldFilm.yaml = 1,NvCamera
 OldFilm.yfx = 1,NvCamera
 OpenCL32.dll = 1
 OpenCL64.dll = 1
+Posterize.fx = 1,NvCamera
 ReShadeFXC32.exe = 1,NvCamera
 RemoveHud.yaml = 1,NvCamera
 RemoveHud.yfx = 1,NvCamera
@@ -904,6 +927,8 @@ SpecialFX.yaml = 1,NvCamera
 SpecialFX.yfx = 1,NvCamera
 SphericalEquirect32.exe = 1,NvCamera
 SphericalEquirect64.exe = 1,NvCamera
+Splitscreen.yaml = 1,NvCamera
+Splitscreen.yfx = 1,NvCamera
 Sticker01.png = 1,NvCamera
 Sticker02.png = 1,NvCamera
 Sticker03.png = 1,NvCamera
@@ -920,6 +945,7 @@ Vignette.yaml = 1,NvCamera
 Vignette.yfx = 1,NvCamera
 YAMLFXC32.exe = 1,NvCamera
 _DisplayDriverRAS.dll = 1,Display.NvContainer\plugins\LocalSystem
+_nvppo.dll = 1,Display.NvContainer\plugins\Session
 cudnn_infer64_7.dll = 1
 d3dcompiler_47_32.dll = 1,NvCamera
 d3dcompiler_47_64.dll = 1,NvCamera
@@ -1052,6 +1078,7 @@ CopyFiles = nv_system32_RS_copyfiles
 CopyFiles = nv_system32_copyfiles
 CopyFiles = nv_syswow64_RS_copyfiles
 CopyFiles = nv_syswow64_copyfiles
+DelReg = nv_dch_delreg
 FeatureScore = CF
 NVAllowHDAudioPreStage = 1
 NVAllowIR3DDriverPreStage = 2
@@ -1162,11 +1189,13 @@ NvContainerRecovery.bat,,,0x00000000
 
 [NvDisplayContainer_PluginsLS_Dir]
 NvXDCore.dll,,,0x00000000
+NvcDispCorePlugin.dll,,,0x00000000
 NvcDispWatchdog.dll,,,0x00000000
 _DisplayDriverRAS.dll,,,0x00000000
 
 [NvDisplayContainer_PluginsSession_Dir]
 NvFBCPlugin.dll,,,0x00000000
+_nvppo.dll,,,0x00000000
 nvprofileupdaterplugin.dll,,,0x00000010
 nvxdsyncplugin.dll,,,0x00000000
 
@@ -1181,6 +1210,11 @@ ServiceType = 0x10
 StartType = 2
 
 [NvDisplayContainer_ServiceInstall_AddReg]
+HKR,"LocalSystem\NvXDCore",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
+HKR,"LocalSystem\NvcDispCorePlugin",DisableLoad,%REG_DWORD%,0x00000000
+HKR,"LocalSystem\NvcDispCorePlugin",LogFile,%REG_SZ%,"%%ProgramData%%\NvcDispCorePlugin.log"
+HKR,"LocalSystem\NvcDispCorePlugin",LogLevel,%REG_DWORD%,0x00000003
+HKR,"LocalSystem\NvcDispWatchdog",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
 HKR,"LocalSystem\Watchdog",LogFile,%REG_SZ%,"%%ProgramData%%\NVDisplayContainerWatchdog.log"
 HKR,"LocalSystem\Watchdog\Session",Container,%REG_SZ%,"%13%\Display.NvContainer\NVDisplay.Container.exe"
 HKR,"LocalSystem\Watchdog\Session",Folder,%REG_SZ%,"%13%\Display.NvContainer\plugins\Session"
@@ -1188,6 +1222,7 @@ HKR,"LocalSystem\Watchdog\Session",GenerateDump,%REG_DWORD%,0x00000000
 HKR,"LocalSystem\Watchdog\Session",Parameters,%REG_SZ%,"-f %%ProgramData%%\DisplaySessionContainer%%d.log -d %13%\Display.NvContainer\plugins\Session -r -l 3 -p 30000 -cfg NVDisplay.ContainerLocalSystem\Session"
 HKR,"LocalSystem\Watchdog\Session",Policy,%REG_SZ%,"10/300/5"
 HKR,"LocalSystem\Watchdog\Session",RunElevated,%REG_DWORD%,0x00000001
+HKR,"LocalSystem\_DisplayDriverRAS",DisableLoad,%REG_DWORD_NO_CLOBBER%,0x00000002
 HKR,,FailureActions,%REG_BINARY%,0a,00,00,00,00,00,00,00,01,00,00,00,03,00,00,00,14,00,00,00,01,00,00,00,70,17,00,00,01,00,00,00,40,1f,00,00,03,00,00,00,10,27,00,00
 HKR,,FailureActionsOnNonCrashFailures,%REG_DWORD%,0x00000001
 HKR,,FailureCommand,%REG_SZ%,"cmd.exe /C %13%\Display.NvContainer\NvContainerRecovery.bat NVDisplay.ContainerLocalSystem %%ProgramData%%\NvContainerRecoveryNVDisplay.ContainerLocalSystem.log"
@@ -1601,6 +1636,7 @@ HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\InprocServer32",ThreadingMode
 HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\ProgID",,%REG_SZ%,"WorkStationServer.FSSettings.1"
 HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\TypeLib",,%REG_SZ%,"{D1F48243-B994-45CD-8A55-03DBB33745BE}"
 HKCR,"CLSID\{86193C76-0DCA-4B33-83CA-6D7DCCA48D0B}\VersionIndependentProgID",,%REG_SZ%,"WorkStationServer.FSSettings"
+HKCR,"CLSID\{87BDED91-3F10-4383-B8C1-26886F49F141}",AppID,%REG_SZ%,""
 HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}",,%REG_SZ%,"TVImage Class"
 HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}",AppID,%REG_SZ%,""
 HKCR,"CLSID\{87CDE238-C2D9-4E31-99D7-DCD6A7E15F19}\InprocServer32",,%REG_SZ%,"%13%\nvvitvs.dll"
@@ -1746,6 +1782,13 @@ HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\InprocServer32",ThreadingMode
 HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\ProgID",,%REG_SZ%,"GamesConfigServer.SliPhysXExt.1"
 HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
 HKCR,"CLSID\{C8F113AE-A2C9-47CB-8DAE-9376C64665AD}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.SliPhysXExt"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}",AppID,%REG_SZ%,""
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\InprocServer32",,%REG_EXPAND_SZ%,"%13%\nvGameS.dll"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\InprocServer32",ThreadingModel,%REG_SZ%,"Apartment"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\ProgID",,%REG_SZ%,"GamesConfigServer.ManageACESettings.1"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\TypeLib",,%REG_SZ%,"{6481B880-0FE2-48FE-A15F-D8254FC98884}"
+HKCR,"CLSID\{CBD600D7-2256-4ADB-8E3A-185F56EA9353}\VersionIndependentProgID",,%REG_SZ%,"GamesConfigServer.ManageACESettings"
 HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}",,%REG_SZ%,"ColorCorrection Class"
 HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}",AppID,%REG_SZ%,""
 HKCR,"CLSID\{CC0648AE-7E85-483C-B1DB-9335C9D6F8C7}\InprocServer32",,%REG_SZ%,"%13%\nvdisps.dll"
@@ -1784,6 +1827,7 @@ HKCR,"CLSID\{DB4CBE92-74B3-4027-8B37-7B67927A7034}\VersionIndependentProgID",,%R
 HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}",,%REG_SZ%,"PSFactoryBuffer"
 HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\InProcServer32",,%REG_SZ%,"%13%\NVXDBat.dll"
 HKCR,"CLSID\{DC09760E-9FDA-454A-B9D2-7E663E58C39D}\InProcServer32",ThreadingModel,%REG_SZ%,"Both"
+HKCR,"CLSID\{DCAB0989-1301-4319-BE5F-ADE89F88581C}",AppID,%REG_SZ%,""
 HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}",,%REG_SZ%,"ManageSdiOutput Class"
 HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}",AppID,%REG_SZ%,""
 HKCR,"CLSID\{DDEF97F5-723E-47D2-87B1-14C39EFBAE11}\InprocServer32",,%REG_SZ%,"%13%\nvwss.dll"
@@ -2007,6 +2051,11 @@ HKCR,"GamesConfigServer.Manage3DSettings.1",,%REG_SZ%,"Manage3DSettings Class"
 HKCR,"GamesConfigServer.Manage3DSettings.1\CLSID",,%REG_SZ%,"{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}"
 HKCR,"GamesConfigServer.Manage3DSettings\CLSID",,%REG_SZ%,"{BBB7D605-8639-49D0-849E-32C4A5DBB9C3}"
 HKCR,"GamesConfigServer.Manage3DSettings\CurVer",,%REG_SZ%,"GamesConfigServer.Manage3DSettings.1"
+HKCR,"GamesConfigServer.ManageACESettings",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"GamesConfigServer.ManageACESettings.1",,%REG_SZ%,"ManageACESettings Class"
+HKCR,"GamesConfigServer.ManageACESettings.1\CLSID",,%REG_SZ%,"{CBD600D7-2256-4ADB-8E3A-185F56EA9353}"
+HKCR,"GamesConfigServer.ManageACESettings\CLSID",,%REG_SZ%,"{CBD600D7-2256-4ADB-8E3A-185F56EA9353}"
+HKCR,"GamesConfigServer.ManageACESettings\CurVer",,%REG_SZ%,"GamesConfigServer.ManageACESettings.1"
 HKCR,"GamesConfigServer.SliBasic",,%REG_SZ%,"SliBasic Class"
 HKCR,"GamesConfigServer.SliBasic.1",,%REG_SZ%,"SliBasic Class"
 HKCR,"GamesConfigServer.SliBasic.1\CLSID",,%REG_SZ%,"{DE0549BD-F34D-4748-AD94-0F2F22749F4F}"
@@ -2311,7 +2360,10 @@ HKR,"Global\NVTweak",NvCplTvLocaleAutoDetect,%REG_DWORD%,1
 HKR,"Global\NVTweak",OptimusProfilesInstalled,%REG_DWORD%,0x0
 HKR,"Global\NvCplApi\Policies",ContextUIPolicy,%REG_DWORD%,2
 HKR,"Global\NvTweak",InstalledDisplayServers,%REG_SZ%,"%13%\"
+HKR,"Global\Startup\AcePersistenceOnDriverLoad",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AcePersistenceOnInstall",,%REG_DWORD%,0x0
 HKR,"Global\Startup\AcePersistenceStartup",,%REG_DWORD%,0x0
+HKR,"Global\Startup\AceResumeFromSuspend",,%REG_DWORD%,0x0
 HKR,"Global\Startup\AdjustPRROnLogin",,%REG_DWORD%,0x0
 HKR,"Global\Startup\AdjustPRROnServiceStart",,%REG_DWORD%,0x0
 HKR,"Global\Startup\ApplyCommandLineMode",,%REG_DWORD%,0x0
@@ -2389,6 +2441,217 @@ nvwssr.dll,,,0x00000010
 nvxdapix.dll,,,0x00000010
 nvxdbat.dll,,,0x00000010
 nvxdplcy.dll,,,0x00000010
+
+[nv_dch_delreg]
+HKCU,"Software\NVIDIA Corporation\Global\UserLoggedIn"
+HKCU,"Software\NVIDIA Corporation\NVPMAPI.001.006"
+HKLM,"Software\Khronos\OpenCL\Vendors","nvopencl.dll"
+HKLM,"Software\NVIDIA Corporation\Global\FTS"
+HKLM,"Software\NVIDIA Corporation\Global\Startup"
+HKLM,"Software\NVIDIA Corporation\NVIDIA PerfKit"
+HKLM,"Software\Wow6432Node\Khronos\OpenCL\Vendors","nvopencl.dll"
+HKLM,"System\CurrentControlSet\Control\GraphicsDrivers\MemoryManager",Period.EnableEvictionThresholdForWrite
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Close
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Collect
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Library
+HKLM,"System\CurrentControlSet\Services\nv\Performance",Open
+HKR,"",RMUseAggressiveGC6
+HKR,"",WDMDriver
+HKR,,"CX875.HD480i.default.overscan"
+HKR,,"CX875.HD576i.default.overscan"
+HKR,,"NV36ZORAN.525@60Hz.saturation"
+HKR,,"NV36ZORAN.625@50Hz.saturation"
+HKR,,"NV36ZORAN.connector"
+HKR,,"NVZORAN.connector"
+HKR,,"NVZORAN.laststdSDTV"
+HKR,,"NVZORAN.standard"
+HKR,,"RMGpuSurpriseRemoval"
+HKR,,APMSupport
+HKR,,AllowAutoAudioInfoFrame
+HKR,,AllowMaxPerf
+HKR,,AllowNonDFPAsPrimary
+HKR,,AvailWin2kDualview
+HKR,,CH7009.default.flickerfilter
+HKR,,COLORCOMPRESSENABLE
+HKR,,CUST_MODE
+HKR,,CX25875.HD480i.0720x0480.flickerfilter
+HKR,,CX875.HD480i.0720x0480.flickerfilter
+HKR,,CX875.HD480p.overscanshift
+HKR,,CX875.HD576p.overscanshift
+HKR,,CapabilityOverride
+HKR,,DCBOverride0
+HKR,,DCBOverride1
+HKR,,DecodeCtl
+HKR,,DellSwitch1
+HKR,,DevicesConnected
+HKR,,DrvOptions
+HKR,,EdgeBlendingData
+HKR,,EnableBrightnessControl
+HKR,,EnableCoreVoltage
+HKR,,EnableOverDrive
+HKR,,EnableOverdriveDataFromEdidInfo
+HKR,,EnableOverdriveEditPort0
+HKR,,EnableOverdriveEditPort1
+HKR,,EnableOverdriveEditPort2
+HKR,,EnableSystemMemoryTiling
+HKR,,ExposePrimaryDeviceOnly
+HKR,,ExtTempHighLimit
+HKR,,FSDOSHotKeyPolicy
+HKR,,FailAttachment
+HKR,,FailNonPrimaryDevice
+HKR,,FastResume
+HKR,,ForceExtOnS3Resume
+HKR,,GlitchFreeMClk
+HKR,,GridLicensedFeatures
+HKR,,HAA
+HKR,,HotKeyOptions
+HKR,,HotKeyUseOSResolution
+HKR,,LVDSReduceFreq
+HKR,,LidBehavior
+HKR,,LidStaysOffOnOpen
+HKR,,LimitedVideoSystem
+HKR,,LocalTempHighLimit
+HKR,,MB_Enable
+HKR,,MVNumKeys
+HKR,,MapOSD3ToNV
+HKR,,MapOSD4ToNV
+HKR,,Max16x12
+HKR,,MaxPerfWithPerfmon
+HKR,,MinPstateForHDVideo
+HKR,,MinPstateForSDVideo
+HKR,,Mobile
+HKR,,MultiFunctionSupported
+HKR,,MutuallyExDevs
+HKR,,NT4MultiDevEnable
+HKR,,NV36ZORAN.connector
+HKR,,NVIF0000000100000000
+HKR,,NVIF0000000B00000000
+HKR,,NVIF0000000B00000001
+HKR,,NVIF0000000B00000005
+HKR,,NVREGSWITCHES
+HKR,,NVZORAN.connector
+HKR,,OEMRandomModeFilter
+HKR,,OVERDRIVE
+HKR,,OverDriveData0
+HKR,,OverDriveData1
+HKR,,OverDriveData2
+HKR,,OverDriveData3
+HKR,,OverDriveData5
+HKR,,OverDriveData8
+HKR,,OverDriveData9
+HKR,,OverDriveDataA
+HKR,,OverDriveDataC
+HKR,,OverDriveDataD
+HKR,,OverScan720Level
+HKR,,OverScanFSVMLevel
+HKR,,OverdrivePanelProductCode0
+HKR,,Override1400x1050
+HKR,,OverrideDisRM4High
+HKR,,OverrideEdidFlags0
+HKR,,OverrideEdidFlags1
+HKR,,OverrideEdidFlags2
+HKR,,OverrideEdidFlags3
+HKR,,OverrideEdidFlags4
+HKR,,OverrideSBIOSDevs
+HKR,,PSSwitch1
+HKR,,PanScanSelection
+HKR,,Panel00
+HKR,,Panel01
+HKR,,Panel02
+HKR,,Panel03
+HKR,,Panel04
+HKR,,Panel05
+HKR,,Panel06
+HKR,,Panel07
+HKR,,Panel08
+HKR,,Panel09
+HKR,,Panel0A
+HKR,,Panel0B
+HKR,,Panel0C
+HKR,,Panel0D
+HKR,,Panel0E
+HKR,,Panel0F
+HKR,,PanelBrightnessLimits
+HKR,,PanelPWMDutyRange
+HKR,,PanelPWMFrequency
+HKR,,PerfLevelSrc
+HKR,,PowerMizerDefault
+HKR,,PowerMizerDefaultAC
+HKR,,PowerMizerEnable
+HKR,,PowerMizerLevel
+HKR,,PowerMizerLevelAC
+HKR,,PowerMizerSelected
+HKR,,PowerMizerSelectedAC
+HKR,,PowerSaverHsyncOn
+HKR,,PreferSbiosFpMode
+HKR,,PrevTwinViewInfo
+HKR,,PruningMode
+HKR,,PushBufferMemorySpace
+HKR,,RM200026907
+HKR,,RM496596
+HKR,,ReBootedNowForceMode
+HKR,,RmAcpiDdcBug400359WAR
+HKR,,RmAvoidBusyReadingTimer
+HKR,,RmCacheLoc
+HKR,,RmCrtHotplug
+HKR,,RmDisableACPI
+HKR,,RmDisableCompression
+HKR,,RmDisableInst2Sys
+HKR,,RmDisablePteCoalesce
+HKR,,RmDisableRpSerrWorkarounds
+HKR,,RmDynamicSLIAllowed
+HKR,,RmEnableBiosDevSelect
+HKR,,RmEnableMPSync
+HKR,,RmEnablePbi
+HKR,,RmEnablePowerSupplyCapacity
+HKR,,RmEnableTVFormatNotify
+HKR,,RmFixTcVcMap
+HKR,,RmForcePerfLevelOnD3Cold
+HKR,,RmI2cValidatedPortMask
+HKR,,RmInduceDeviceScan
+HKR,,RmMaintainDevs
+HKR,,RmMaintainScaling
+HKR,,RmMaintainTVStandard
+HKR,,RmNVIFFunctions
+HKR,,RmOnDemandVBlank
+HKR,,RmPowerSupplyCapacity
+HKR,,RmSecPrivContWar
+HKR,,RmThermalConversionRate
+HKR,,RmThermalProviderInfo
+HKR,,RmThermalProviderNum
+HKR,,RmTilingFormatMode
+HKR,,RmTvoAlwaysDetectEIAJCVBS
+HKR,,RmTvoDisableComponentOverscanHDTV
+HKR,,RmTvoPedestalMS
+HKR,,RmTvoPreferredDetectionHDTV
+HKR,,RmTvoWhitepointOverride
+HKR,,SaveSettings
+HKR,,SoftEDIDs
+HKR,,TestAnalogLoadAlways
+HKR,,ThermalPolicySW1
+HKR,,TwinViewDisabled
+HKR,,TwinViewInfo
+HKR,,UseGDIRefreshRate
+HKR,,UseHWSelectedDevice
+HKR,,UseHotKeySameMode
+HKR,,UseUncachedPCIMappings
+HKR,,UserModeDriverGUID
+HKR,,UserModeDriverName
+HKR,,VBIOSGpioTableUsageMask
+HKR,,VPVer
+HKR,,VarBusLinkWidth
+HKR,,VgaCompatible
+HKR,,WidePanelBehavior
+HKR,,ZCOMPRESSENABLE
+HKR,,_Default_Global_XALG_Color_Range
+HKR,,_Default_Global_XEN_Blue_Stretch
+HKR,,_Default_Global_XEN_Color_Range
+HKR,,_Default_Global_XEN_Dynamic_Contrast
+HKR,,_Default_Global_XEN_Green_Stretch
+HKR,,_Default_Global_XEN_Skin_Tone
+HKR,,_User_DFP0_XALG_Deinterlace
+HKR,,_User_DFP0_XEN_Deinterlace
+HKR,,nvEDIDPruning
 
 [nv_dchu_service_addreg]
 HKR,,DCHUVen,%REG_DWORD%,0x10DE
@@ -2522,14 +2785,14 @@ HKR,"Interrupt Management\MessageSignaledInterruptProperties",MessageNumberLimit
 
 [nv_ngx_copyfiles]
 
-[nv_ngx_copyfiles__01]
+[nv_ngx_copyfiles]
 cudnn_infer64_7.dll,,,
 nvngx.dll,,,
 nvngx_update.exe,,,
 
 [nv_ngx_service_addreg]
 
-[nv_ngx_service_addreg__01]
+[nv_ngx_service_addreg]
 HKR,"NGXCore",NGXPath,%REG_SZ%,%13%
 
 [nv_nvcamera_copyfiles]
@@ -2553,6 +2816,7 @@ GreenScreenBG01.jpg,,,
 GreenScreenBG02.jpg,,,
 HighresBlender32.exe,,,
 HighresBlender64.exe,,,
+LDR_RGB1_18.png,,,
 Letterbox.yaml,,,
 Letterbox.yfx,,,
 NightMode.yaml,,,
@@ -2566,6 +2830,7 @@ NvImageConvert32.exe,,,
 NvImageConvert64.exe,,,
 OldFilm.yaml,,,
 OldFilm.yfx,,,
+Posterize.fx,,,
 ReShadeFXC32.exe,,,
 RemoveHud.yaml,,,
 RemoveHud.yfx,,,
@@ -2575,6 +2840,8 @@ SpecialFX.yaml,,,
 SpecialFX.yfx,,,
 SphericalEquirect32.exe,,,
 SphericalEquirect64.exe,,,
+Splitscreen.yaml,,,
+Splitscreen.yfx,,,
 Sticker01.png,,,
 Sticker02.png,,,
 Sticker03.png,,,
@@ -2643,7 +2910,7 @@ HKR,,OpenGLVersionWoW,%REG_DWORD%,0x00001000
 SoftwareType = 1
 SoftwareBinary = %13%\nvdispco64.exe
 SoftwareArguments = -deviceId:<<DeviceInstanceID>>, -pkgName:Display.Driver
-SoftwareVersion = 26.21.14.4112
+SoftwareVersion = 26.21.14.4575
 
 [nv_store_software_cpl_install64]
 SoftwareType = 2
@@ -2651,6 +2918,8 @@ SoftwareVersion=8.1.944.0
 SoftwareID=pfn://NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj
 
 [nv_sysDrivers_RS_copyfiles]
+nvcompiler32.dll,,,
+nvcompiler64.dll,,,
 nvlddmkm.sys,,,
 
 [nv_sysDrivers_copyfiles]
@@ -2671,12 +2940,13 @@ nvoglv64.dll,,,
 nvoptix.dll,,,
 nvrtum64.dll,,,
 nv-vk64.json,,,
+nvvkwddc64.dll,,,
 nvwgf2umx.dll,,,
 nvwgf2umx_cfg.dll,,,
 
 [nv_system32_copyfiles]
 nvapi64.dll,,,0x00004000
-nvcompiler.dll,nvcompiler64.dll,,0x00004000
+nvcompiler64.dll,nvcompiler64.dll,,0x00004000
 nvcuda.dll,nvcuda64.dll,,0x00004000
 nvcuvid.dll,nvcuvid64.dll,,0x00004000
 nvEncodeAPI64.dll,,,0x00004000
@@ -2703,12 +2973,13 @@ nvdlist.dll,,,
 nvldumd.dll,,,
 nvoglv32.dll,,,
 nv-vk32.json,,,
+nvvkwddc32.dll,,,
 nvwgf2um.dll,,,
 nvwgf2um_cfg.dll,,,
 
 [nv_syswow64_copyfiles]
 nvapi.dll,,,0x00004000
-nvcompiler.dll,nvcompiler32.dll,,0x00004000
+nvcompiler32.dll,nvcompiler32.dll,,0x00004000
 nvcuda.dll,nvcuda32.dll,,0x00004000
 nvcuvid.dll,nvcuvid32.dll,,0x00004000
 nvEncodeAPI.dll,,,0x00004000
@@ -2725,7 +2996,6 @@ vulkaninfo.exe,vulkaninfo-x86.exe,,0x00004020
 vulkaninfo-1-999-0-0-0.exe,vulkaninfo-x86.exe,,0x00004020
 
 [nv_telemetry_copyfiles]
-NvTelemetry64.dll,,,0x00000010
 
 [nv_timingRestrictions_addreg]
 HKR,,NV_R&T,%REG_MULTI_SZ%,"R&T0000=1920,1080,*,30,*,CRTX,OEM,7425,2200,48,56,562,2,5,++I"
@@ -3385,8 +3655,11 @@ NVIDIA_DEV.1CBC = "NVIDIA Quadro P600"
 NVIDIA_DEV.1CBD = "NVIDIA Quadro P620"
 NVIDIA_DEV.1CBF = "NVIDIA Graphics Device"
 NVIDIA_DEV.1CC2 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1CCC = "NVIDIA GP107BM"
-NVIDIA_DEV.1CCD = "NVIDIA GP107BM"
+NVIDIA_DEV.1CCC = "NVIDIA GeForce GTX 1050 Ti Mobile"
+NVIDIA_DEV.1CCD = "NVIDIA GeForce GTX 1050 Mobile"
+NVIDIA_DEV.1CD6 = "NVIDIA GeForce MX250"
+NVIDIA_DEV.1CFA = "NVIDIA Quadro P2000"
+NVIDIA_DEV.1CFB = "NVIDIA Quadro P1000"
 NVIDIA_DEV.1D00 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1D01 = "NVIDIA GeForce GT 1030"
 NVIDIA_DEV.1D10 = "NVIDIA GeForce MX150"
@@ -3409,7 +3682,7 @@ NVIDIA_DEV.1D81 = "NVIDIA Titan V"
 NVIDIA_DEV.1D82 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DB0 = "NVIDIA Graphics Device"
 NVIDIA_DEV.1DB1 = "NVIDIA Tesla V100-SXM2-16GB"
-NVIDIA_DEV.1DB2 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1DB2 = "NVIDIA Tesla V100 DGXS 16GB"
 NVIDIA_DEV.1DB3 = "NVIDIA Tesla V100-FHHL-16GB"
 NVIDIA_DEV.1DB4 = "NVIDIA Tesla V100-PCIE-16GB"
 NVIDIA_DEV.1DB5 = "NVIDIA Tesla V100-SXM2-32GB"
@@ -3436,11 +3709,15 @@ NVIDIA_DEV.1DFD = "NVIDIA Graphics Device"
 NVIDIA_DEV.1E02 = "NVIDIA TITAN RTX"
 NVIDIA_DEV.1E04 = "NVIDIA GeForce RTX 2080 Ti"
 NVIDIA_DEV.1E07 = "NVIDIA GeForce RTX 2080 Ti"
+NVIDIA_DEV.1E2D = "NVIDIA TU102B"
+NVIDIA_DEV.1E2E = "NVIDIA TU102B"
 NVIDIA_DEV.1E30 = "NVIDIA Quadro RTX 6000/8000"
-NVIDIA_DEV.1E36 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1E36 = "NVIDIA Quadro RTX 6000"
 NVIDIA_DEV.1E37 = "NVIDIA GeForce Now RTX T10"
 NVIDIA_DEV.1E38 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1E3C = "NVIDIA TU102GL"
+NVIDIA_DEV.1E3C = "NVIDIA Quadro RTX 6000"
+NVIDIA_DEV.1E3D = "NVIDIA TU102GL"
+NVIDIA_DEV.1E3E = "NVIDIA TU102GL"
 NVIDIA_DEV.1E78 = "NVIDIA Quadro RTX 6000/8000 (Passive Cooling)"
 NVIDIA_DEV.1E81 = "NVIDIA GeForce RTX 2080 SUPER"
 NVIDIA_DEV.1E82 = "NVIDIA GeForce RTX 2080"
@@ -3449,11 +3726,14 @@ NVIDIA_DEV.1E87 = "NVIDIA GeForce RTX 2080"
 NVIDIA_DEV.1E89 = "NVIDIA GeForce RTX 2060"
 NVIDIA_DEV.1E90 = "NVIDIA GeForce RTX 2080"
 NVIDIA_DEV.1EAB = "NVIDIA TU104M"
+NVIDIA_DEV.1EAE = "NVIDIA TU104M"
 NVIDIA_DEV.1EB0 = "NVIDIA Quadro RTX 5000"
 NVIDIA_DEV.1EB1 = "NVIDIA Quadro RTX 4000"
 NVIDIA_DEV.1EB5 = "NVIDIA Quadro RTX 5000"
 NVIDIA_DEV.1EB6 = "NVIDIA Quadro RTX 4000 with Max-Q Design"
 NVIDIA_DEV.1EB8 = "NVIDIA Tesla T4"
+NVIDIA_DEV.1EBE = "NVIDIA TU104GL"
+NVIDIA_DEV.1EBE = "NVIDIA TU104GL"
 NVIDIA_DEV.1EC2 = "NVIDIA GeForce RTX 2070 SUPER"
 NVIDIA_DEV.1EC7 = "NVIDIA GeForce RTX 2070 SUPER"
 NVIDIA_DEV.1ED0 = "NVIDIA GeForce RTX 2080"
@@ -3466,23 +3746,35 @@ NVIDIA_DEV.1F09 = "NVIDIA GeForce GTX 1660 SUPER"
 NVIDIA_DEV.1F10 = "NVIDIA GeForce RTX 2070"
 NVIDIA_DEV.1F11 = "NVIDIA GeForce RTX 2060"
 NVIDIA_DEV.1F12 = "NVIDIA GeForce RTX 2060"
+NVIDIA_DEV.1F14 = "NVIDIA GeForce RTX 2070 with Max-Q Design"
+NVIDIA_DEV.1F15 = "NVIDIA GeForce RTX 2060"
+NVIDIA_DEV.1F2E = "NVIDIA TU106M"
 NVIDIA_DEV.1F36 = "NVIDIA Quadro RTX 3000"
 NVIDIA_DEV.1F42 = "NVIDIA GeForce RTX 2060 SUPER"
 NVIDIA_DEV.1F47 = "NVIDIA GeForce RTX 2060 SUPER"
 NVIDIA_DEV.1F50 = "NVIDIA GeForce RTX 2070"
 NVIDIA_DEV.1F51 = "NVIDIA GeForce RTX 2060"
+NVIDIA_DEV.1F76 = "NVIDIA Quadro RTX 3000"
+NVIDIA_DEV.1F81 = "NVIDIA TU117"
 NVIDIA_DEV.1F82 = "NVIDIA GeForce GTX 1650"
 NVIDIA_DEV.1F91 = "NVIDIA GeForce GTX 1650"
 NVIDIA_DEV.1F92 = "NVIDIA GeForce GTX 1650"
 NVIDIA_DEV.1F94 = "NVIDIA Graphics Device"
-NVIDIA_DEV.1F95 = "NVIDIA Graphics Device"
+NVIDIA_DEV.1F95 = "NVIDIA GeForce GTX 1650 Ti"
 NVIDIA_DEV.1F96 = "NVIDIA GeForce GTX 1650"
+NVIDIA_DEV.1F99 = "NVIDIA GeForce GTX 1650"
+NVIDIA_DEV.1FAE = "NVIDIA TU117GL"
 NVIDIA_DEV.1FB8 = "NVIDIA Quadro T2000"
 NVIDIA_DEV.1FB9 = "NVIDIA Quadro T1000"
+NVIDIA_DEV.1FBF = "NVIDIA TU117GL"
 NVIDIA_DEV.2182 = "NVIDIA GeForce GTX 1660 Ti"
+NVIDIA_DEV.2183 = "NVIDIA TU116"
 NVIDIA_DEV.2184 = "NVIDIA GeForce GTX 1660"
 NVIDIA_DEV.2187 = "NVIDIA GeForce GTX 1650 SUPER"
 NVIDIA_DEV.2191 = "NVIDIA GeForce GTX 1660 Ti"
+NVIDIA_DEV.2192 = "NVIDIA GeForce GTX 1650 Ti"
+NVIDIA_DEV.21AE = "NVIDIA TU116GL"
+NVIDIA_DEV.21BF = "NVIDIA TU116GL"
 NVIDIA_DEV.21C4 = "NVIDIA GeForce GTX 1660 SUPER"
 NVIDIA_DEV.21D1 = "NVIDIA GeForce GTX 1660 Ti"
 
