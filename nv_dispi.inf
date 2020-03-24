@@ -10,7 +10,7 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 10/24/2019, 26.21.14.4112
+DriverVer   = 03/17/2020, 26.21.14.4575
 CatalogFile = NV_DISP.CAT
 
 [nv_CplInstaller]
