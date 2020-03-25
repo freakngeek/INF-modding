@@ -1,4 +1,4 @@
-; FreaknGeek & StefanG3D INF for R445 version 8.000 
+; FreaknGeek & StefanG3D INF for R445 version 8.165 
 ; http://www.laptopvideo2go.com
 ; ignore leftover legacy device ID's, R445+ drivers support Kepler and beyond
 
@@ -10,16 +10,16 @@ Signature   = "$Windows NT$"
 Provider    = %NVIDIA%
 ClassGUID   = {4D36E968-E325-11CE-BFC1-08002BE10318}
 Class       = Display
-DriverVer   = 03/17/2020, 26.21.14.4575
+DriverVer   = 03/24/2020, 26.21.14.4578
 CatalogFile = NV_DISP.CAT
 
 [nv_coinstaller_copyfiles]
-nvdispco6444575.dll,nvdispco64.dll,,0x00004000
-nvdispgenco6444575.dll,nvdispgenco64.dll,,0x00004000
+nvdispco6444578.dll,nvdispco64.dll,,0x00004000
+nvdispgenco6444578.dll,nvdispgenco64.dll,,0x00004000
 
 [nv_commonCoinstaller_addreg]
-HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444575.dll,NvGenericCoInstall"
-HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444575.dll,NVDisplayCoInstall"
+HKR,,CoInstallers32,%REG_MULTI_SZ%,"nvdispgenco6444578.dll,NvGenericCoInstall"
+HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444578.dll,NVDisplayCoInstall"
 ; HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers",TdrDelay,%REG_DWORD%,5
 ; HKLM,"SYSTEM\CurrentControlSet\Control\GraphicsDrivers",HwSchMode,%REG_DWORD%,2
 ; HKCU,"Software\Microsoft\DirectX\UserGpuPreferences",VRROptimizeEnable,%REG_SZ%,1
@@ -730,6 +730,8 @@ HKR,,CoInstallers32,%REG_SZ_APPEND%,"nvdispco6444575.dll,NVDisplayCoInstall"
 %NVIDIA_DEV.1E87% = Hurz,PCI\VEN_10DE&DEV_1E87
 %NVIDIA_DEV.1E89% = Hurz,PCI\VEN_10DE&DEV_1E89
 %NVIDIA_DEV.1E90% = Hurz,PCI\VEN_10DE&DEV_1E90
+%NVIDIA_DEV.1E91% = Hurz,PCI\VEN_10DE&DEV_1E91
+%NVIDIA_DEV.1E93% = Hurz,PCI\VEN_10DE&DEV_1E93
 %NVIDIA_DEV.1EAB% = Hurz,PCI\VEN_10DE&DEV_1EAB
 %NVIDIA_DEV.1EAE% = Hurz,PCI\VEN_10DE&DEV_1EAE
 %NVIDIA_DEV.1EB0% = Hurz,PCI\VEN_10DE&DEV_1EB0
@@ -2879,6 +2881,8 @@ NVIDIA_DEV.1E84 = "NVIDIA GeForce RTX 2070 SUPER"
 NVIDIA_DEV.1E87 = "NVIDIA GeForce RTX 2080"
 NVIDIA_DEV.1E89 = "NVIDIA GeForce RTX 2060"
 NVIDIA_DEV.1E90 = "NVIDIA GeForce RTX 2080"
+NVIDIA_DEV.1E91 = "NVIDIA GeForce RTX 2070 Super"
+NVIDIA_DEV.1E93 = "NVIDIA GeForce RTX 2080 Super"
 NVIDIA_DEV.1EAB = "NVIDIA TU104M"
 NVIDIA_DEV.1EAE = "NVIDIA TU104M"
 NVIDIA_DEV.1EB0 = "NVIDIA Quadro RTX 5000"
